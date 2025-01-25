@@ -17,6 +17,11 @@ export default function NavBar() {
               Top books
             </a>
           </div>
+
+          <div className="flex space-x-3">
+            <h1 className="font-bold text-xl text-slate-900">LOGO</h1>
+            <h1 className="font-bold text-xl text-slate-900">LOGO</h1>
+          </div>
         </div>
       </div>
     </>
