@@ -1,1 +1,9 @@
-rfc
+
+
+export default function NavBar() {
+  return (
+    <>
+      
+    </>
+  )
+}
