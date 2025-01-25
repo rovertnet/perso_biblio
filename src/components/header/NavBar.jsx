@@ -7,7 +7,7 @@ export default function NavBar() {
         <div className="flex justify-between items-center px-14 py-5">
           <h1 className="font-bold text-xl text-slate-900">LOGO</h1>
           <div className="flex justify-center items-center border-[1px] border-slate-900 space-x-5 px-3 py-2">
-            <a href="#" className="font-bold text-"></a>
+            <a href="#" className="font-bold text-xl text-slate-900"></a>
           </div>
         </div>
       </div>
