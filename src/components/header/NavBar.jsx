@@ -8,7 +8,7 @@ export default function NavBar() {
           <h1 className="font-bold text-xl text-slate-900">LOGO</h1>
 
           <div className="fixed left-72 right-72 top-3">
-            <div className="flex justify-center items-center border-[1px] border-slate-900 bg-slate-500 rounded-xl space-x-5 px-3 py-2">
+            <div className="flex justify-center items-center border-[1px] border-slate-900 bg-slate-900 rounded-xl space-x-5 px-3 py-2">
               <a href="#" className="font-bold text-xl text-slate-200">
                 Accueil
               </a>
