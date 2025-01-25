@@ -16,6 +16,12 @@ export default function NavBar() {
             <a href="#" className="font-bold text-xl text-slate-900">
               Top books
             </a>
+            <a href="#" className="font-bold text-xl text-slate-900">
+              A propos
+            </a>
+            <a href="#" className="font-bold text-xl text-slate-900">
+              Contact
+            </a>
           </div>
 
           <div className="flex space-x-3">
