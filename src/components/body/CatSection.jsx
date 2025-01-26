@@ -4,7 +4,7 @@ export default function CatSection() {
   return (
     <>
       <div className="block px-14 py-6">
-        <h2 className="font-bold text-lg text-slate-900 py-10">
+        <h2 className="font-bold text-lg text-slate-900 py-5">
           Toutes les catégories
         </h2>
         <hr className="text-slate-400 " />
