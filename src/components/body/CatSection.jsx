@@ -9,7 +9,7 @@ export default function CatSection() {
         </h2>
         <hr className="text-slate-300 " />
         <div className="grid grid-cols-4 gap-10 py-10">
-          <div className="bg-white rounded-md px-5 py-3 shadow-md">
+          <div className="bg-white rounded-md px-3 py-3 shadow-md">
             <img
               src={catimage}
               alt={catimage}
@@ -20,7 +20,7 @@ export default function CatSection() {
             </span>
           </div>
 
-          <div className="bg-white rounded-md px-5 py-3 shadow-md">
+          <div className="bg-white rounded-md px-3 py-3 shadow-md">
             <img
               src={catimage}
               alt={catimage}
