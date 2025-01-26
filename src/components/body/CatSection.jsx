@@ -19,7 +19,7 @@ export default function CatSection() {
             </span>
           </div>
 
-          <div className="bg-white rounded-md px-5 py-3 ">
+          <div className="bg-white rounded-md px-5 py-3 shadow-md">
             <img
               src={catimage}
               alt={catimage}
@@ -30,7 +30,7 @@ export default function CatSection() {
             </span>
           </div>
 
-          <div className="bg-white rounded-md px-5 py-3 ">
+          <div className="bg-white rounded-md px-5 py-3 shadow-md">
             <img
               src={catimage}
               alt={catimage}
@@ -41,7 +41,7 @@ export default function CatSection() {
             </span>
           </div>
 
-          <div className="bg-white rounded-md px-5 py-3 ">
+          <div className="bg-white rounded-md px-5 py-3 shadow-md">
             <img
               src={catimage}
               alt={catimage}
