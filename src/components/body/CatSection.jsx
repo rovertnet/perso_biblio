@@ -20,7 +20,7 @@ export default function CatSection() {
             </span>
           </div>
 
-          <div className="bg-white rounded-md px-3 py-3 shadow-md">
+          <div className="bg-white rounded-md py-3 shadow-md flex flex-col justify-center items-center">
             <img
               src={catimage}
               alt={catimage}
