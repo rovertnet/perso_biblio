@@ -7,7 +7,8 @@ export default function CatSection() {
         <h2 className="font-bold text-lg text-slate-900 py-10">
           Toutes les catégories
         </h2>
-        <div className="grid grid-cols-4 gap-10">
+        <hr className="text-slate-400 " />
+        <div className="grid grid-cols-4 gap-10 py-5">
           <div className="bg-white rounded-md px-5 py-3 shadow-md">
             <img
               src={catimage}
