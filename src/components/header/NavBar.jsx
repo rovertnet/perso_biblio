@@ -3,7 +3,7 @@
 export default function NavBar() {
   return (
     <>
-      <div className="bg-white fixed top-0 right-0 left-0">
+      <div className="bg-white fixed top-0 right-0 left-0 shadow-md">
         <div className="flex justify-between items-center px-14 py-5">
           <h1 className="font-bold text-xl text-slate-900">LOGO</h1>
 
