@@ -1,4 +1,4 @@
-import imgproduit from "../../assets/image/P2.jpg"
+import imgproduit from "../../assets/image/P1.jpg"
 
 export default function Populaires() {
   return (
