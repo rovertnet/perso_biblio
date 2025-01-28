@@ -28,8 +28,12 @@ export default function NavBar() {
           </div>
 
           <div className="flex space-x-3">
-            <h1 className="font-bold text-xl text-slate-900">LOGO</h1>
-            <button className="font-bold text-lg md:text-lg py-2 md:py-2 px-3 md:px-3 text-slate-200 rounded-xl bg-slate-900">Connexion</button>
+            <button className="font-bold text-lg md:text-lg py-2 md:py-2 px-3 md:px-3 text-slate-200 rounded-xl bg-slate-900">
+              Panier
+            </button>
+            <button className="font-bold text-lg md:text-lg py-2 md:py-2 px-3 md:px-3 text-slate-200 rounded-xl bg-slate-900">
+              Connexion
+            </button>
           </div>
         </div>
       </div>
