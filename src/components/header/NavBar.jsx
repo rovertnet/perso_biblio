@@ -29,7 +29,7 @@ export default function NavBar() {
 
           <div className="flex space-x-3">
             <h1 className="font-bold text-xl text-slate-900">LOGO</h1>
-            <h1 className="font-bold text-xl text-slate-900">LOGO</h1>
+            <button className="">Connexion</button>
           </div>
         </div>
       </div>
