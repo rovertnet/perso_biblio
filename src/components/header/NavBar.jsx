@@ -7,7 +7,7 @@ export default function NavBar() {
         <div className="flex justify-between items-center px-14 py-5">
           <h1 className="font-bold text-xl text-slate-900">LOGO</h1>
 
-          <div className="fixed left-72 right-72 top-3">
+          <div className="">
             <div className="flex justify-center items-center border-[1px] border-slate-900 bg-slate-900 rounded-2xl space-x-5 px-3 py-2">
               <a href="#" className="font-bold text-xl text-slate-200">
                 Accueil
@@ -29,7 +29,7 @@ export default function NavBar() {
 
           <div className="flex space-x-3">
             <h1 className="font-bold text-xl text-slate-900">LOGO</h1>
-            <button className="font-bold text-lg md:text-lg py-2 md:py-3 px-3 md:px-4 bg-slate-">Connexion</button>
+            <button className="font-bold text-lg md:text-lg py-2 md:py-3 px-3 md:px-4 bg-slate-900">Connexion</button>
           </div>
         </div>
       </div>
