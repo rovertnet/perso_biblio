@@ -11,6 +11,7 @@ export default function TopBooks() {
           <div className="bg-white px-5 py-5 shadow-md rounded-md">
             <img src={imgproduit} alt={imgproduit} className="rounded-md" />
             <div className="py-6 px-5 flex flex-col">
+              <h3 className="font-semibold text-lg text-slate-800">Titre</h3>
               
             </div>
           </div>
