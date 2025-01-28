@@ -29,7 +29,7 @@ export default function NavBar() {
 
           <div className="flex space-x-3">
             <h1 className="font-bold text-xl text-slate-900">LOGO</h1>
-            <button className="font-bold text-lg md:text-lg">Connexion</button>
+            <button className="font-bold text-lg md:text-lg py-2 md:py-3 px-3 md:px-4">Connexion</button>
           </div>
         </div>
       </div>
