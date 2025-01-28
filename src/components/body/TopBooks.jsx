@@ -10,7 +10,9 @@ export default function TopBooks() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 py-10">
           <div className="bg-white px-5 py-5 shadow-md rounded-md">
             <img src={imgproduit} alt={imgproduit} className="rounded-md" />
-            <div className="py-6 px-5 flex"></div>
+            <div className="py-6 px-5 flex flex-col">
+              
+            </div>
           </div>
         </div>
       </div>
