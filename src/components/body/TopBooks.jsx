@@ -3,7 +3,7 @@ import imgproduit from "../../assets/image/P2.jpg"
 export default function TopBooks() {
   return (
     <>
-      <div className="block px-14 py-6 bg-[rgb(247, 244, 244)]">
+      <div className="block px-14 py-6 ">
         <h2 className="font-bold text-lg text-slate-900 py-5">Top Livres</h2>
         <hr className="text-slate-300 " />
 
