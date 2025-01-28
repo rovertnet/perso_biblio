@@ -11,7 +11,7 @@ export default function TopBooks() {
           <div className="bg-white px-5 py-3">
             <div className="bg-[#eeecec] px-5 py-14"></div>
             <div className="py-6 px-5 flex">
-
+              
             </div>
           </div>
         </div>
