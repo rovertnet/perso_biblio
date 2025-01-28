@@ -3,7 +3,7 @@ import catimage from "../../assets/image/RP1.jpeg"
 export default function CatSection() {
   return (
     <>
-      <div className="block px-14 py-6">
+      <div className="block px-14 py-6 bg-[#f7f4f4]">
         <h2 className="font-bold text-lg text-slate-900 py-5">
           Toutes les catégories
         </h2>
