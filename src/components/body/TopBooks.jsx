@@ -10,7 +10,9 @@ export default function TopBooks() {
         <hr className="text-slate-300 " />
         
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
-          <div className="bg-white "></div>
+          <div className="bg-white px-5 py-3">
+            <div className=""></div>
+          </div>
         </div>
       </div>
     </>
