@@ -3,7 +3,7 @@
 export default function TopBooks() {
   return (
     <>
-      <div className="block px-14 py-6 bg-[#f7f4f4]">
+      <div className="block px-14 py-6 bg-[rgb(247, 244, 244)]">
         <h2 className="font-bold text-lg text-slate-900 py-5">
           Toutes les catégories
         </h2>
