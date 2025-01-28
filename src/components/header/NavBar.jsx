@@ -8,20 +8,20 @@ export default function NavBar() {
           <img src={logo} alt={logo} className="w-14 h-14" />
 
           <div className="">
-            <div className="flex justify-center items-center border-[1px] border-slate-900 bg-slate-900 rounded-2xl space-x-5 px-3 py-2">
-              <a href="#" className="font-bold text-xl text-slate-200">
+            <div className="flex justify-center items-center rounded-2xl space-x-5 px-3 py-2">
+              <a href="#" className="font-bold text-xl text-slate-900">
                 Accueil
               </a>
-              <a href="#" className="font-bold text-xl text-slate-200">
+              <a href="#" className="font-bold text-xl text-slate-900">
                 Shop
               </a>
-              <a href="#" className="font-bold text-xl text-slate-200">
+              <a href="#" className="font-bold text-xl text-slate-900">
                 Top books
               </a>
-              <a href="#" className="font-bold text-xl text-slate-200">
+              <a href="#" className="font-bold text-xl text-slate-900">
                 A propos
               </a>
-              <a href="#" className="font-bold text-xl text-slate-200">
+              <a href="#" className="font-bold text-xl text-slate-900">
                 Contact
               </a>
             </div>
