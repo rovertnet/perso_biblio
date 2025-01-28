@@ -10,7 +10,7 @@ export default function TopBooks() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           <div className="bg-white px-5 py-3">
             <div className="bg-[#eeecec] px-5 py-14"></div>
-            <div className=""></div>
+            <div className="py-6 px-5 "></div>
           </div>
         </div>
       </div>
