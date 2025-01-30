@@ -14,6 +14,9 @@ export default function NewsLetter() {
                 className="w-full px-5 py-3 text-slate-900 outline-0 focus:outline-0 bg-white border-[1px] border-slate-700 rounded-lg"
                 placeholder="exemple@gmail.com"
               />
+              <button type="button" className="">
+                Button
+              </button>
           </form>
         </div>
       </div>
