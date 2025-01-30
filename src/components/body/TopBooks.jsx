@@ -6,7 +6,7 @@ export default function TopBooks() {
       <div className="block px-14 py-6 ">
         <div className="flex justify-between items-center">
           <h2 className="font-bold text-lg text-slate-900 py-5">Top Livres</h2>
-          <h3 className="font-bold text-sm text-slate-600 py-5"></h3>
+          <h3 className="font-bold text-sm text-slate-400 py-5">Voir tout</h3>
         </div>
         <hr className="text-slate-300 " />
 
