@@ -10,7 +10,7 @@ export default function Footer() {
     <>
       <div className="w-full py-12 bg-[#222020] px-14">
         <div className="grid grid-cols-2 md:grid-cols-3 gap-14">
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-4">
             <img src={logo} alt="logo" className="w-16 h-16" />
             <p className="font-semibold text-lg text-slate-200 max-w-lg">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
@@ -25,13 +25,39 @@ export default function Footer() {
           </div>
 
           <div className="">
-            <h2 className="font-bold text-xl text-white pb-3">Menu</h2>
-            <div className="flex flex-col gap-3"></div>
+            <h2 className="font-bold text-xl text-white pb-4">Menu</h2>
+            <div className="flex flex-col gap-3">
+              <a href="#" className="font-semibold text-lg text-slate-300">
+                Accueil
+              </a>
+              <a href="#" className="font-semibold text-lg text-slate-300">
+                Shop
+              </a>
+              <a href="#" className="font-semibold text-lg text-slate-300">
+                Top Books
+              </a>
+              <a href="#" className="font-semibold text-lg text-slate-300">
+                A propos
+              </a>
+              <a href="#" className="font-semibold text-lg text-slate-300">
+                Contact
+              </a>
+            </div>
           </div>
 
           <div className="">
-            <h2 className="font-bold text-xl text-white pb-3">Liens Utiles</h2>
-            <div className="flex flex-col gap-3"></div>
+            <h2 className="font-bold text-xl text-white pb-4">Liens Utiles</h2>
+            <div className="flex flex-col gap-3">
+              <a href="#" className="font-semibold text-lg text-slate-300">
+                Politique de confidentialité
+              </a>
+              <a href="#" className="font-semibold text-lg text-slate-300">
+                Mention légale
+              </a>
+              <a href="#" className="font-semibold text-lg text-slate-300">
+                CGV
+              </a>
+            </div>
           </div>
         </div>
       </div>
