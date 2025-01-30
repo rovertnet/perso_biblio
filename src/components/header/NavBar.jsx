@@ -1,4 +1,6 @@
 import logo from "../../assets/image/mon_logo.png"
+import { FaCartArrowDown } from "react-icons/fa";
+
 
 export default function NavBar() {
   return (
@@ -28,8 +30,8 @@ export default function NavBar() {
           </div>
 
           <div className="flex space-x-3">
-            <button className="font-bold text-lg md:text-lg py-2 md:py-2 px-3 md:px-3 text-slate-100 rounded-xl bg-[#0c296d] hover:bg-blue-00">
-              Panier
+            <button className="font-bold text-lg md:text-lg py-2 md:py-2 px-2 md:px-2 text-slate-100 rounded-full bg-[#d2defb]">
+              <FaCartArrowDown className="text-lg font-bold text-[#0c296d]" />
             </button>
             <button className="font-bold text-lg md:text-lg py-2 md:py-2 px-3 md:px-3 text-slate-100 rounded-xl bg-[#0c296d] hover:bg-blue-00">
               Connexion
