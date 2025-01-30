@@ -8,6 +8,12 @@ export default function HeroSection() {
           Bienvenu (e) <br /> à la grande biblothèque <br /> de la république
           démocratique du congo
         </h1>
+
+        <div className="flex justify-center items-center">
+          <button className="font-bold text-xl text-white border-[1px] border-white rounded-xl py-4 px-5">
+            Contactez-nous
+          </button>
+        </div>
       </div>
     </>
   );
