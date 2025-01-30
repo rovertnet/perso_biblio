@@ -13,7 +13,7 @@ export default function CatSection() {
             <img
               src={catimage}
               alt={catimage}
-              className="rounded-full h-20 w-20"
+              className="rounded-full h-20 w-20 object-cover"
             />
             <span className="text-sm font-normal py-2 text-center text-slate-800">
               Science
@@ -24,7 +24,7 @@ export default function CatSection() {
             <img
               src={catimage}
               alt={catimage}
-              className="rounded-full h-16 w-16"
+              className="rounded-full h-16 w-16 object-cover"
             />
             <span className="text-sm font-normal py-2 text-center text-slate-800">
               Science
@@ -35,7 +35,7 @@ export default function CatSection() {
             <img
               src={catimage}
               alt={catimage}
-              className="rounded-full h-16 w-16"
+              className="rounded-full h-16 w-16 object-cover"
             />
             <span className="text-sm font-normal py-2 text-center text-slate-800">
               Science
@@ -46,7 +46,7 @@ export default function CatSection() {
             <img
               src={catimage}
               alt={catimage}
-              className="rounded-full h-16 w-16"
+              className="rounded-full h-16 w-16 object-cover"
             />
             <span className="text-sm font-normal py-2 text-center text-slate-800">
               Science
