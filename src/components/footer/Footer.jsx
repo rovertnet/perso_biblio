@@ -25,7 +25,7 @@ export default function Footer() {
           </div>
 
           <div className="">
-            <h2 className="font-bold text-xl text-white pb-4">Menu</h2>
+            <h2 className="font-bold text-2xl text-white pb-4">Menu</h2>
             <div className="flex flex-col gap-3">
               <a href="#" className="font-semibold text-lg text-slate-300">
                 Accueil
@@ -46,7 +46,7 @@ export default function Footer() {
           </div>
 
           <div className="">
-            <h2 className="font-bold text-xl text-white pb-4">Liens Utiles</h2>
+            <h2 className="font-bold text-2xl text-white pb-4">Liens Utiles</h2>
             <div className="flex flex-col gap-3">
               <a href="#" className="font-semibold text-lg text-slate-300">
                 Politique de confidentialité
