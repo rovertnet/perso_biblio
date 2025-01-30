@@ -1,10 +1,15 @@
 import logo from "../../assets/image/mon_logo.png"
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaSquareXTwitter } from "react-icons/fa6";
+
 
 export default function Footer() {
   return (
     <>
       <div className="w-full py-20 bg-[#222020] px-14">
-        <div className="grid grid-2 md:grid-3 gap-14">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-14">
           <div className="flex flex-col gap-3">
             <img src={logo} alt="logo" className="w-14 h-14" />
             <p className="font-semibold text-lg text-slate-200 max-w-lg">
@@ -12,7 +17,10 @@ export default function Footer() {
               excepturi amet rerum labor
             </p>
             <div className="flex space-x-3">
-              
+              <FaFacebook />
+              <FaInstagramSquare />
+              <FaLinkedin />
+              <FaSquareXTwitter />
             </div>
           </div>
 
