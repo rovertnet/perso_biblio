@@ -27,19 +27,19 @@ export default function Footer() {
           <div className="">
             <h2 className="font-bold text-2xl text-white pb-4">Menu</h2>
             <div className="flex flex-col gap-3">
-              <a href="#" className="font-semibold text-lg text-slate-300">
+              <a href="#" className="font-semibold text-lg text-slate-400">
                 Accueil
               </a>
-              <a href="#" className="font-semibold text-lg text-slate-300">
+              <a href="#" className="font-semibold text-lg text-slate-400">
                 Shop
               </a>
-              <a href="#" className="font-semibold text-lg text-slate-300">
+              <a href="#" className="font-semibold text-lg text-slate-400">
                 Top Books
               </a>
-              <a href="#" className="font-semibold text-lg text-slate-300">
+              <a href="#" className="font-semibold text-lg text-slate-400">
                 A propos
               </a>
-              <a href="#" className="font-semibold text-lg text-slate-300">
+              <a href="#" className="font-semibold text-lg text-slate-400">
                 Contact
               </a>
             </div>
@@ -48,13 +48,13 @@ export default function Footer() {
           <div className="">
             <h2 className="font-bold text-2xl text-white pb-4">Liens Utiles</h2>
             <div className="flex flex-col gap-3">
-              <a href="#" className="font-semibold text-lg text-slate-300">
+              <a href="#" className="font-semibold text-lg text-slate-400">
                 Politique de confidentialité
               </a>
-              <a href="#" className="font-semibold text-lg text-slate-300">
+              <a href="#" className="font-semibold text-lg text-slate-400">
                 Mention légale
               </a>
-              <a href="#" className="font-semibold text-lg text-slate-300">
+              <a href="#" className="font-semibold text-lg text-slate-400">
                 CGV
               </a>
             </div>
