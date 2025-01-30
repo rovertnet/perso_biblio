@@ -5,9 +5,11 @@ export default function NewsLetter() {
       <div className="w-full bg-blue-300 py-28 px-14">
         <p className=""></p>
         <form action="#" className="">
-          <input type="mail" className="w-full px-5 py-3 text-" />
+          <div className="flex space-x-3">
+            <input type="mail" className="w-full px-5 py-3 text-slate-900 outline-0 focus:outline-0" />
+          </div>
         </form>
       </div>
     </>
-  )
+  );
 }
