@@ -1,5 +1,4 @@
 import HomePage from "./allPages/HomePage";
-import TopBooks from "./components/body/TopBooks";
 import NavBar from "./components/header/NavBar"
 
 
@@ -10,7 +9,6 @@ function App() {
     <>
       <NavBar />
       <HomePage />
-      <TopBooks />
     </>
   );
 }
