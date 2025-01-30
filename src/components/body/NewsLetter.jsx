@@ -17,8 +17,8 @@ export default function NewsLetter() {
               />
               <div className="">
                 <button
-                  type="button"
-                  className="py-3 px-5 hover:bg-blue-800 hover:text-white hover:border-0 font-bold text-white text-lg text-center border-[1px] border-white rounded-lg"
+                  type="submit"
+                  className="py-3 cursor-pointer px-5 hover:bg-blue-950 hover:text-white hover:border-0 font-bold text-white text-lg text-center border-[1px] border-white rounded-lg"
                 >
                   Envoyer
                 </button>
