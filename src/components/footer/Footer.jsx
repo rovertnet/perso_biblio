@@ -60,6 +60,11 @@ export default function Footer() {
             </div>
           </div>
         </div>
+
+        <hr className="text-slate-400 pt-8" />
+        <span className=" text-gray-300 text-sm flex justify-center items-center md:text-base">
+          © RovertNet {new Date().getFullYear()}. tous droits réservés
+        </span>
       </div>
     </>
   );
