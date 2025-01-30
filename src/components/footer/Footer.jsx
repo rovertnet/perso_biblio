@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <>
       <div className="w-full py-12 bg-[#222020] px-14">
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-10 pb-7">
           <div className="flex flex-col gap-4">
             <img src={logo} alt="logo" className="w-16 h-20" />
             <p className="font-semibold text-xl text-slate-200 max-w-md">
@@ -60,10 +60,11 @@ export default function Footer() {
             </div>
           </div>
         </div>
+      </div>
 
-        <hr className="text-slate-400 pt-8" />
+      <div className="w-full py-5 bg-[#000000] px-14">
         <span className=" text-gray-300 text-sm flex justify-center items-center md:text-base">
-          © RovertNet {new Date().getFullYear()}. tous droits réservés
+          © RovertNet  {new Date().getFullYear()}. tous droits réservés
         </span>
       </div>
     </>
