@@ -2,7 +2,7 @@
 export default function NewsLetter() {
   return (
     <>
-      <div className=""></div>
+      <div className="w-full bg-blue-"></div>
     </>
   )
 }
