@@ -1,4 +1,4 @@
-import logo from "../../assets/image/mon_logo.png"
+import logo from "../../assets/image/logobiblio.png"
 import { FaCartArrowDown } from "react-icons/fa";
 
 
