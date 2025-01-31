@@ -8,6 +8,7 @@ const navigation = [
   { name: "Shop", to: "/shop" },
   { name: "Top Books", to: "/topbooks" },
   { name: "A propos", to: "/about" },
+  { name: "Contact", to: "/contact" },
 ];
 
 function classNames(...classes) {
