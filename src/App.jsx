@@ -6,7 +6,7 @@ import Shop from "./allPages/Shop";
 import TopBooks from "./allPages/Topbooks";
 import About from "./allPages/About";
 import Contact from "./allPages/Contact";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
 
 const MyContext = createContext();
 
@@ -20,19 +20,20 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <MyContext.Provider value={values}>
+        <Router>
           <NavBar />
-          <Routes>
-            <Route path="/" exact={true} element={<HomePage />} />
-            <Route path="/shop" exact={true} element={<Shop />} />
-            <Route path="/topbooks" exact={true} element={<TopBooks />} />
-            <Route path="/about" exact={true} element={<About />} />
-            <Route path="/contact" exact={true} element={<Contact />} />
-          </Routes>
-        </MyContext.Provider>
+          <MyContext.Provider value={values}>
+            <Routes>
+              <Route path="/" exact={true} element={<HomePage />} />
+              <Route path="/shop" exact={true} element={<Shop />} />
+              <Route path="/topbooks" exact={true} element={<TopBooks />} />
+              <Route path="/about" exact={true} element={<About />} />
+              <Route path="/contact" exact={true} element={<Contact />} />
+            </Routes>
+          </MyContext.Provider>
+          <Footer />
+        </Router>
       </BrowserRouter>
-
-      <Footer />
     </>
   );
 }
