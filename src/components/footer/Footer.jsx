@@ -8,7 +8,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 export default function Footer() {
   return (
     <>
-      <div className="w-full py-12 bg-[#222020] px-14">
+      <div className="w-full py-12 bg-[#222020] px-14 block">
         <div className="grid grid-cols-2 md:grid-cols-3 gap-10 pb-7">
           <div className="flex flex-col gap-4">
             <img src={logo} alt="logo" className="w-16 h-20" />
