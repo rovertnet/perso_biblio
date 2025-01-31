@@ -3,7 +3,7 @@ import HomePage from "./allPages/HomePage";
 import Footer from "./components/footer/Footer";
 import NavBar from "./components/header/NavBar"
 import Shop from "./allPages/Shop";
-import TopBooks from "./allPages/Topbooks";
+import TopBook from "./allPages/Topbooks";
 import About from "./allPages/About";
 import Contact from "./allPages/Contact";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -25,7 +25,7 @@ function App() {
           <Routes>
             <Route path="/" exact={true} element={<HomePage />} />
             <Route path="/shop" exact={true} element={<Shop />} />
-            <Route path="/topbooks" exact={true} element={<TopBooks />} />
+            <Route path="/topbooks" exact={true} element={<TopBook />} />
             <Route path="/about" exact={true} element={<About />} />
             <Route path="/contact" exact={true} element={<Contact />} />
           </Routes>
