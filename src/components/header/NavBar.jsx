@@ -4,13 +4,10 @@ import { FaCartArrowDown } from "react-icons/fa";
 
 
 const navigation = [
-  { name: "Tableau de bord", to: "/"},
-  { name: "Sondages", to: "/surveys" },
-];
-const userNavigation = [
-  { name: "Profile", href: "#" },
-  { name: "Parametre", href: "#" },
-  { name: "Déconnexion", href: "#" },
+  { name: "Accueil", to: "/" },
+  { name: "Shop", to: "/shop" },
+  { name: "Top Books", to: "/topbooks" },
+  { name: "A propos", to: "/about" },
 ];
 
 function classNames(...classes) {
