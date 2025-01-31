@@ -20,17 +20,17 @@ function App() {
   return (
     <>
       <BrowserRouter>
-          <MyContext.Provider value={values}>
-            <NavBar />
-            <Routes>
-              <Route path="/" exact={true} element={<HomePage />} />
-              <Route path="/shop" exact={true} element={<Shop />} />
-              <Route path="/topbooks" exact={true} element={<TopBooks />} />
-              <Route path="/about" exact={true} element={<About />} />
-              <Route path="/contact" exact={true} element={<Contact />} />
-            </Routes>
-          </MyContext.Provider>
-          <Footer />
+        <NavBar />
+        <MyContext.Provider value={values}>
+          <Routes>
+            <Route path="/" exact={true} element={<HomePage />} />
+            <Route path="/shop" exact={true} element={<Shop />} />
+            <Route path="/topbooks" exact={true} element={<TopBooks />} />
+            <Route path="/about" exact={true} element={<About />} />
+            <Route path="/contact" exact={true} element={<Contact />} />
+          </Routes>
+        </MyContext.Provider>
+        <Footer />
       </BrowserRouter>
     </>
   );
