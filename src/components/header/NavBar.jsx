@@ -37,7 +37,9 @@ export default function NavBar() {
                       " text-xl font-bold"
                     )
                   }
-                ></NavLink>
+                >
+                  {item.name}
+                </NavLink>
               ))}
             </div>
           </div>
