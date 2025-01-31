@@ -19,10 +19,9 @@ function App() {
 
   return (
     <>
-      <NavBar />
-
       <BrowserRouter>
         <MyContext.Provider value={values}>
+          <NavBar />
           <Routes>
             <Route path="/" exact={true} element={<HomePage />} />
             <Route path="/shop" exact={true} element={<Shop />} />
