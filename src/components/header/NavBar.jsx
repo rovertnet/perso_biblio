@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import logo from "../../assets/image/logobiblio.png"
 import { FaCartArrowDown } from "react-icons/fa";
 
@@ -12,6 +13,10 @@ const userNavigation = [
   { name: "Déconnexion", href: "#" },
 ];
 
+function classNames(...classes) {
+  return classes.filter(Boolean).join(" ");
+}
+
 
 export default function NavBar() {
 
@@ -24,7 +29,20 @@ export default function NavBar() {
 
           <div className="">
             <div className="flex justify-center items-center rounded-2xl space-x-5 px-3 py-2">
-              
+              {navigation.map((item) => (
+                <NavLink
+                  key={item.name}
+                  to={item.to}
+                  className={({ isActive }) =>
+                    classNames(
+                      isActive
+                        ? " text-slate-900"
+                        : "text-gray-900 hover:text-gray-800",
+                      " text-xl font-bold"
+                    )
+                  }
+                ></NavLink>
+              ))}
             </div>
           </div>
 
