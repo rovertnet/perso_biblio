@@ -2,7 +2,20 @@ import logo from "../../assets/image/logobiblio.png"
 import { FaCartArrowDown } from "react-icons/fa";
 
 
+const navigation = [
+  { name: "Tableau de bord", to: "/"},
+  { name: "Sondages", to: "/surveys" },
+];
+const userNavigation = [
+  { name: "Profile", href: "#" },
+  { name: "Parametre", href: "#" },
+  { name: "Déconnexion", href: "#" },
+];
+
+
 export default function NavBar() {
+
+
   return (
     <>
       <div className="bg-white fixed top-0 right-0 left-0 shadow-md">
@@ -11,21 +24,7 @@ export default function NavBar() {
 
           <div className="">
             <div className="flex justify-center items-center rounded-2xl space-x-5 px-3 py-2">
-              <a href="#" className="font-bold text-xl text-slate-900">
-                Accueil
-              </a>
-              <a href="#" className="font-bold text-xl text-slate-900">
-                Shop
-              </a>
-              <a href="#" className="font-bold text-xl text-slate-900">
-                Top books
-              </a>
-              <a href="#" className="font-bold text-xl text-slate-900">
-                A propos
-              </a>
-              <a href="#" className="font-bold text-xl text-slate-900">
-                Contact
-              </a>
+              
             </div>
           </div>
 
