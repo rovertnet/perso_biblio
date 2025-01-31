@@ -6,7 +6,7 @@ import Shop from "./allPages/Shop";
 import TopBooks from "./allPages/Topbooks";
 import About from "./allPages/About";
 import Contact from "./allPages/Contact";
-import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const MyContext = createContext();
 
@@ -20,9 +20,8 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Router>
-          <NavBar />
           <MyContext.Provider value={values}>
+            <NavBar />
             <Routes>
               <Route path="/" exact={true} element={<HomePage />} />
               <Route path="/shop" exact={true} element={<Shop />} />
@@ -32,7 +31,6 @@ function App() {
             </Routes>
           </MyContext.Provider>
           <Footer />
-        </Router>
       </BrowserRouter>
     </>
   );
