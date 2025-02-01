@@ -61,7 +61,7 @@ export default function NavBar() {
         {/* menu mobile */}
 
         <div className="md:hidden">
-          <div className="flex flex-col justify-start items-start gap-3.5 space-y-1 px-11 pb-3 pt-2 sm:px-3">
+          <div className="flex flex-col justify-items-center items-center gap-3.5 space-y-1 px-11 pb-3 pt-2 sm:px-3">
             {navigation.map((item) => (
               <NavLink
                 key={item.name}
@@ -80,11 +80,11 @@ export default function NavBar() {
             ))}
           </div>
 
-          <div className="flex space-x-7 py-5 justify-start px-11 items-center">
-            <button className="font-bold cursor-pointer text-2xl md:text-lg py-5 md:py-2 px-20 md:px-3 text-slate-100 rounded-xl bg-[#0c296d] hover:bg-blue-00">
+          <div className="flex space-x-5 py-5 justify-center px-11 items-center">
+            <button className="font-bold cursor-pointer text-lg md:text-lg py-2 md:py-2 px-24 md:px-3 text-slate-100 rounded-xl bg-[#0c296d] hover:bg-blue-00">
               Sign up
             </button>
-            <button className="font-bold cursor-pointer text-lg md:text-lg py-6 md:py-3 px-6 md:px-3 text-slate-100 rounded-full bg-[#d2defb]">
+            <button className="font-bold cursor-pointer text-lg md:text-lg py-5 md:py-3 px-5 md:px-3 text-slate-100 rounded-full bg-[#d2defb]">
               <FaCartArrowDown className="text-3xl font-bold text-[#0c296d]" />
             </button>
           </div>
