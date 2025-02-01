@@ -56,7 +56,26 @@ export default function NavBar() {
 
         {/* menu mobile */}
 
-        <div className="md:hidden"></div>
+        <div className="md:hidden">
+          <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
+            {navigation.map((item) => (
+              <NavLink
+                key={item.name}
+                to={item.to}
+                className={({ isActive }) =>
+                  classNames(
+                    isActive
+                      ? " text-blue-500 px-2 py-1.5"
+                      : "text-gray-900 hover:text-gray-800",
+                    " text-xl font-bold"
+                  )
+                }
+              >
+                {item.name}
+              </NavLink>
+            ))}
+          </div>
+        </div>
       </div>
     </>
   );
