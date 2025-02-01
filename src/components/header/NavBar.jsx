@@ -23,7 +23,7 @@ export default function NavBar() {
         <div className="flex justify-between items-center px-14 py-5">
           <img src={logo} alt={logo} className="w-14 h-14" />
 
-          <div className="">
+          <div className=" hidden md:block">
             <div className="flex justify-center items-center rounded-2xl space-x-5 px-3 py-2">
               {navigation.map((item) => (
                 <NavLink
@@ -44,13 +44,28 @@ export default function NavBar() {
             </div>
           </div>
 
-          <div className="flex space-x-3">
-            <button className="font-bold cursor-pointer text-lg md:text-lg py-2 md:py-2 px-3 md:px-3 text-slate-100 rounded-xl bg-[#0c296d] hover:bg-blue-00">
-              Sign up
-            </button>
-            <button className="font-bold cursor-pointer text-lg md:text-lg py-3 md:py-3 px-3 md:px-3 text-slate-100 rounded-full bg-[#d2defb]">
-              <FaCartArrowDown className="text-xl font-bold text-[#0c296d]" />
-            </button>
+          <div className=" hidden md:block">
+            <div className="flex space-x-3">
+              <button className="font-bold cursor-pointer text-lg md:text-lg py-2 md:py-2 px-3 md:px-3 text-slate-100 rounded-xl bg-[#0c296d] hover:bg-blue-00">
+                Sign up
+              </button>
+              <button className="font-bold cursor-pointer text-lg md:text-lg py-3 md:py-3 px-3 md:px-3 text-slate-100 rounded-full bg-[#d2defb]">
+                <FaCartArrowDown className="text-xl font-bold text-[#0c296d]" />
+              </button>
+            </div>
+          </div>
+
+          <div className="-mr-2 flex md:hidden">
+            {/* Mobile menu button */}
+            <div className="relative inline-flex items-center justify-center rounded-md bg-gray-600 p-2 text-white hover:bg-gray-400 hover:text-slate-900 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+              <span className="absolute -inset-0.5" />
+              <span className="sr-only">afficher menu</span>
+              {open ? (
+                <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+              ) : (
+                <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+              )}
+            </div>
           </div>
         </div>
 
