@@ -55,23 +55,15 @@ export default function NavBar() {
             </div>
           </div>
 
-          <div className="-mr-2 flex md:hidden">
+          <div className="-mr-2 md:hidden">
             {/* Mobile menu button */}
-            <div className="relative inline-flex items-center justify-center rounded-md bg-gray-600 p-2 text-white hover:bg-gray-400 hover:text-slate-900 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-              <span className="absolute -inset-0.5" />
-              <span className="sr-only">afficher menu</span>
-              {open ? (
-                <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
-              ) : (
-                <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
-              )}
-            </div>
+            
           </div>
         </div>
 
         {/* menu mobile */}
 
-        <div className="md:hidden">
+        <div className="md:hidden flex flex-col gap-2.5">
           <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
             {navigation.map((item) => (
               <NavLink
