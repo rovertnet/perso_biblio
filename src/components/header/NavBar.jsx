@@ -20,8 +20,8 @@ export default function NavBar() {
   return (
     <>
       <div className="bg-white fixed top-0 right-0 left-0 shadow-md">
-        <div className="flex justify-between items-center px-14 py-5">
-          <img src={logo} alt={logo} className="w-14 h-14" />
+        <div className="flex justify-between items-center px-11 md:px-14 py-5">
+          <img src={logo} alt={logo} className="w-14  h-14" />
 
           <div className=" hidden md:block">
             <div className="flex justify-center items-center rounded-2xl space-x-5 px-3 py-2">
@@ -61,7 +61,7 @@ export default function NavBar() {
         {/* menu mobile */}
 
         <div className="md:hidden">
-          <div className="flex flex-col justify-center items-center gap-2.5 space-y-1 px-2 pb-3 pt-2 sm:px-3">
+          <div className="flex flex-col justify-start items-start gap-2.5 space-y-1 px-11 pb-3 pt-2 sm:px-3">
             {navigation.map((item) => (
               <NavLink
                 key={item.name}
@@ -71,7 +71,7 @@ export default function NavBar() {
                     isActive
                       ? " text-blue-500 px-2 py-1.5"
                       : "text-gray-900 hover:text-gray-800",
-                    " text-xl font-bold"
+                    " text-6xl font-bold"
                   )
                 }
               >
@@ -80,11 +80,11 @@ export default function NavBar() {
             ))}
           </div>
 
-          <div className="flex space-x-3 py-5 justify-center items-center">
-            <button className="font-bold cursor-pointer text-lg md:text-lg py-2 md:py-2 px-3 md:px-3 text-slate-100 rounded-xl bg-[#0c296d] hover:bg-blue-00">
+          <div className="flex space-x-3 py-5 justify-start px-11 items-center">
+            <button className="font-bold cursor-pointer text-lg md:text-lg py-5 md:py-2 px-20 md:px-3 text-slate-100 rounded-xl bg-[#0c296d] hover:bg-blue-00">
               Sign up
             </button>
-            <button className="font-bold cursor-pointer text-lg md:text-lg py-3 md:py-3 px-3 md:px-3 text-slate-100 rounded-full bg-[#d2defb]">
+            <button className="font-bold cursor-pointer text-lg md:text-lg py-5 md:py-3 px-20 md:px-3 text-slate-100 rounded-full bg-[#d2defb]">
               <FaCartArrowDown className="text-xl font-bold text-[#0c296d]" />
             </button>
           </div>
