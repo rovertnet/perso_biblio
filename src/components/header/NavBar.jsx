@@ -69,7 +69,7 @@ export default function NavBar() {
                 className={({ isActive }) =>
                   classNames(
                     isActive
-                      ? " text-blue-500 px-2 py-1.5"
+                      ? " text-blue-500 py-1.5"
                       : "text-gray-900 hover:text-gray-800",
                     " text-6xl font-bold"
                   )
