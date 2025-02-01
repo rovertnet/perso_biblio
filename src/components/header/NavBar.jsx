@@ -21,7 +21,7 @@ export default function NavBar() {
     <>
       <div className="bg-white fixed top-0 right-0 left-0 shadow-md">
         <div className="flex justify-between items-center px-11 md:px-14 py-5">
-          <img src={logo} alt={logo} className="w-14  h-14" />
+          <img src={logo} alt={logo} className="w-24 md:w-16 h-24 md:h-16" />
 
           <div className=" hidden md:block">
             <div className="flex justify-center items-center rounded-2xl space-x-5 px-3 py-2">
