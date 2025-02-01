@@ -75,6 +75,8 @@ export default function NavBar() {
               </NavLink>
             ))}
           </div>
+
+          <button className=""></button>
         </div>
       </div>
     </>
