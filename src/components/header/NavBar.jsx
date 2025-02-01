@@ -80,11 +80,11 @@ export default function NavBar() {
             ))}
           </div>
 
-          <div className="flex space-x-3 py-5 justify-start px-11 items-center">
+          <div className="flex space-x-7 py-5 justify-start px-11 items-center">
             <button className="font-bold cursor-pointer text-2xl md:text-lg py-5 md:py-2 px-20 md:px-3 text-slate-100 rounded-xl bg-[#0c296d] hover:bg-blue-00">
               Sign up
             </button>
-            <button className="font-bold cursor-pointer text-lg md:text-lg py-5 md:py-3 px-16 md:px-3 text-slate-100 rounded-full bg-[#d2defb]">
+            <button className="font-bold cursor-pointer text-lg md:text-lg py-6 md:py-3 px-6 md:px-3 text-slate-100 rounded-full bg-[#d2defb]">
               <FaCartArrowDown className="text-3xl font-bold text-[#0c296d]" />
             </button>
           </div>
