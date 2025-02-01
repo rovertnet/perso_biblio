@@ -53,6 +53,8 @@ export default function NavBar() {
             </button>
           </div>
         </div>
+
+        {/* menu mobile */}
       </div>
     </>
   );
