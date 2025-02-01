@@ -57,7 +57,7 @@ export default function NavBar() {
 
           {/* Mobile menu button */}
           <div className=" md:hidden">
-            
+            <button className=""></button>
           </div>
         </div>
 
