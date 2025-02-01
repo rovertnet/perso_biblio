@@ -55,16 +55,13 @@ export default function NavBar() {
             </div>
           </div>
 
-          <div className="-mr-2 md:hidden">
-            {/* Mobile menu button */}
-            
-          </div>
+          <div className="-mr-2 md:hidden">{/* Mobile menu button */}</div>
         </div>
 
         {/* menu mobile */}
 
-        <div className="md:hidden flex flex-col gap-2.5">
-          <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
+        <div className="md:hidden">
+          <div className="flex flex-col justify-center items-center gap-2.5 space-y-1 px-2 pb-3 pt-2 sm:px-3">
             {navigation.map((item) => (
               <NavLink
                 key={item.name}
@@ -83,7 +80,7 @@ export default function NavBar() {
             ))}
           </div>
 
-          <div className="flex space-x-3">
+          <div className="flex space-x-3 py-5 justify-center items-center">
             <button className="font-bold cursor-pointer text-lg md:text-lg py-2 md:py-2 px-3 md:px-3 text-slate-100 rounded-xl bg-[#0c296d] hover:bg-blue-00">
               Sign up
             </button>
