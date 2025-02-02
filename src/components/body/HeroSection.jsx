@@ -4,7 +4,7 @@ export default function HeroSection() {
   return (
     <>
       <div className="block h-full w-full py-32 px-32 hero object-cover md:object-cover">
-        <h1 className="font-extrabold md:text-center md:text-3xl md:max-w-5xl max-w- text-base py-10  md:py-14 text-transparent bg-clip-text bg-gradient-to-r from-purple-700 from-10% via-blue-400 via-30% to-orange-500 to-90% ... uppercase">
+        <h1 className="font-extrabold md:text-center md:text-3xl md:max-w-5xl max-w-96 text-center text-base py-10  md:py-14 text-transparent bg-clip-text bg-gradient-to-r from-purple-700 from-10% via-blue-400 via-30% to-orange-500 to-90% ... uppercase">
           Bienvenu (e)  à la grande biblothèque de la république
           démocratique du congo
         </h1>
