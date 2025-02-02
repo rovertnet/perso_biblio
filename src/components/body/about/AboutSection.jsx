@@ -36,7 +36,9 @@ export default function AboutSection() {
           </div>
 
           <div className="flex flex-col gap-5">
-            <div className="bg-"></div>
+            <div className="bg-white px-5 py-7">
+              <h1 className="font-extrabold text-3xl text-slate-950 "></h1>
+            </div>
           </div>
         </div>
       </div>
