@@ -10,7 +10,9 @@ export default function AboutSection() {
           Une brève explication sur notre bibliothèque
         </h2>
         {/*  */}
-        <div className="py-10 md:py-10 flex flex-col md:flex-row"></div>
+        <div className="py-10 md:py-10 flex flex-col md:flex-row ">
+          <div className="flex flex-col gap-5"></div>
+        </div>
       </div>
     </>
   );
