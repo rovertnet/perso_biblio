@@ -28,7 +28,7 @@ export default function NavBar() {
   return (
     <>
       <div className="bg-white fixed top-0 right-0 left-0 shadow-md">
-        <div className="flex justify-between items-center px-11 md:px-14 py-5">
+        <div className="flex justify-between items-center px-9 md:px-14 md:py-5 py-3">
           <img src={logo} alt={logo} className="w-16 md:w-16 h-16 md:h-16" />
 
           <div className=" hidden md:block">
@@ -67,7 +67,7 @@ export default function NavBar() {
           <div className=" md:hidden">
             <button
               onClick={toggleMenu}
-              className="font-bold cursor-pointer text-lg md:text-lg py-4 px-4 text-slate-100 rounded-full bg-[#d2defb]"
+              className="font-bold cursor-pointer text-lg md:text-lg py-3 px-3 text-slate-100 rounded-full bg-[#d2defb]"
             >
               {openMenu ? (
                 <IoMdClose
