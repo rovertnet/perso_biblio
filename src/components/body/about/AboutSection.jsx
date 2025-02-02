@@ -22,7 +22,7 @@ export default function AboutSection() {
             <h2 className="font-extrabold text-2xl text-slate-900 text-start">
               Une brève explication sur notre bibliothèque
             </h2>
-            <span className="font-semibold text-lg text-slate-700">
+            <span className="font-semibold text-lg text-justify text-slate-700">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Molestias, ducimus sit distinctio a est quibusdam assumenda
               quisquam voluptas eveniet, repudiandae reiciendis ab sapiente
@@ -40,7 +40,7 @@ export default function AboutSection() {
               <h1 className="font-extrabold text-3xl text-slate-950 pb-3 text-start">
                 +30.3K
               </h1>
-              <span className="font-semibold text-lg text-start text-slate-700">
+              <span className="font-semibold text-lg text-justify text-slate-700">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Molestias, ducimus sit distinctio a est quibusdam assumenda
                 quisquam voluptas eveniet.
@@ -49,9 +49,9 @@ export default function AboutSection() {
 
             <div className="bg-white px-5 py-7 border-[1px] border-slate-400 rounded-md">
               <h1 className="font-extrabold text-3xl text-slate-950 pb-3 text-start">
-                +80.3K
+                +80.7K
               </h1>
-              <span className="font-semibold text-lg text-start text-slate-700">
+              <span className="font-semibold text-lg text-justify text-slate-700">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Molestias, ducimus sit distinctio a est quibusdam assumenda
                 quisquam voluptas eveniet.
@@ -60,9 +60,9 @@ export default function AboutSection() {
 
             <div className="bg-white px-5 py-7 border-[1px] border-slate-400 rounded-md">
               <h1 className="font-extrabold text-3xl text-slate-950 pb-3 text-start">
-                +60.3K
+                +60.8K
               </h1>
-              <span className="font-semibold text-lg text-start text-slate-700">
+              <span className="font-semibold text-lg text-justify text-slate-700">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Molestias, ducimus sit distinctio a est quibusdam assumenda
                 quisquam voluptas eveniet.
