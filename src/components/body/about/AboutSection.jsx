@@ -46,6 +46,28 @@ export default function AboutSection() {
                 quisquam voluptas eveniet.
               </span>
             </div>
+
+            <div className="bg-white px-5 py-7 border-[1px] border-slate-400 rounded-md">
+              <h1 className="font-extrabold text-3xl text-slate-950 pb-3 text-start">
+                +30.3K
+              </h1>
+              <span className="font-semibold text-lg text-start text-slate-700">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Molestias, ducimus sit distinctio a est quibusdam assumenda
+                quisquam voluptas eveniet.
+              </span>
+            </div>
+
+            <div className="bg-white px-5 py-7 border-[1px] border-slate-400 rounded-md">
+              <h1 className="font-extrabold text-3xl text-slate-950 pb-3 text-start">
+                +30.3K
+              </h1>
+              <span className="font-semibold text-lg text-start text-slate-700">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Molestias, ducimus sit distinctio a est quibusdam assumenda
+                quisquam voluptas eveniet.
+              </span>
+            </div>
           </div>
         </div>
       </div>
