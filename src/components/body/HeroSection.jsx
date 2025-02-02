@@ -11,7 +11,7 @@ export default function HeroSection() {
 
         <div className="flex justify-center items-center">
           <>
-            <button className="font-bold cursor-pointer hover:bg-black hover:border-0 text-xl text-white border-[1px] border-white rounded-xl py-2 md:py-4 px-10 md:px-3">
+            <button className="font-bold cursor-pointer hover:bg-black hover:border-0 text-lg md:text-xl text-white border-[1px] border-white rounded-xl py-2 md:py-4 px-10 md:px-3">
               Contactez-nous
             </button>
           </>
