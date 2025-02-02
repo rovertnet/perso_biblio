@@ -19,7 +19,7 @@ export default function AboutSection() {
               alt="about image"
               className="rounded-md object-cover w-full h-full md:w-full md:h-full"
             />
-            <h2 className="font-extrabold text-2xl text-slate-900 pb-3.5 text-start">
+            <h2 className="font-extrabold text-2xl text-slate-900 text-start">
               Une brève explication sur notre bibliothèque
             </h2>
             <span className="font-semibold text-lg text-slate-700">
@@ -27,6 +27,7 @@ export default function AboutSection() {
               ducimus sit distinctio a est quibusdam assumenda quisquam voluptas eveniet, 
               repudiandae reiciendis ab sapiente earum itaque cumque aliquid odit. Consequuntur, quia.
             </span>
+            <button className="font-bold bg-blue-950 text-slate-100 px-3 py-2 rounded-md">Contact-nous</button>
           </div>
         </div>
       </div>
