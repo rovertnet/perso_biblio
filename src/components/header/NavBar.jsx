@@ -16,6 +16,11 @@ function classNames(...classes) {
 }
 
 export default function NavBar() {
+  const [openMenu, setOpenMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setOpenMenu(!openMenu);
+  };
 
   return (
     <>
