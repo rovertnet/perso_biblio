@@ -86,19 +86,15 @@ export default function NavBar() {
 
         {/* menu mobile */}
 
-        <div className={`md:hidden ${
-              openMenu
-                ? ""
-                : "hidden"
-            }`}>
-          <div
-            className="flex flex-col justify-items-center items-center gap-3.5 space-y-1 px-11 pb-3 sm:px-3"
-          >
+        <div className={`md:hidden ${openMenu ? "" : "hidden"}`}>
+          <div className="flex flex-col justify-items-center items-center gap-3.5 space-y-1 px-11 pb-3 sm:px-3">
             {navigation.map((item) => (
               <NavLink
                 key={item.name}
                 to={item.to}
                 offset={-100}
+                spy={true}
+                smooth={true}
                 className={({ isActive }) =>
                   classNames(
                     isActive
