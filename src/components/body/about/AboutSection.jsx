@@ -22,6 +22,7 @@ export default function AboutSection() {
             <h2 className="font-extrabold text-2xl text-slate-900 pb-3.5 text-center">
               Une brève explication sur notre bibliothèque
             </h2>
+            <span className="font-semibold text-"></span>
           </div>
         </div>
       </div>
