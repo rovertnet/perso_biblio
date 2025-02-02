@@ -8,11 +8,11 @@ export default function NewsLetter() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
             excepturi amet rerum labor
           </p>
-          <form action="#" className="w-full">
-            <div className="py-5 flex space-x-3">
+          <form action="#" className="w-full sm:w-full md:w-full lg:w-full">
+            <div className="py-5 flex lg:flex-col space-x-3">
               <input
                 type="mail"
-                className="w-full px-5 py-3 text-slate-900 outline-0 focus:outline-0 bg-white border-[1px] border-slate-700 rounded-lg"
+                className="w-full px-5 py-3 text-slate-900 outline-0 focus:outline-0 sm:w-full md:w-full lg:w-full bg-white border-[1px] border-slate-700 rounded-lg"
                 placeholder="exemple@gmail.com"
               />
               <div className="">
