@@ -38,7 +38,7 @@ export default function NavBar() {
                     classNames(
                       isActive
                         ? " text-blue-500 px-2 py-1.5"
-                        : "text-gray-900 hover:text-gray-800",
+                        : "text-gray-900 hover:text-blue-500",
                       " text-xl font-bold"
                     )
                   }
@@ -62,7 +62,21 @@ export default function NavBar() {
 
           {/* Mobile menu button */}
           <div className=" md:hidden">
-            <button className=""></button>
+            <button className="">
+              {openMenu ? (
+                <IoMdClose
+                  size={22}
+                  className="text-slate-200"
+                  aria-hidden="true"
+                />
+              ) : (
+                <HiMenuAlt4
+                  size={22}
+                  className="text-slate-200"
+                  aria-hidden="true"
+                />
+              )}
+            </button>
           </div>
         </div>
 
