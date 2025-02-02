@@ -29,7 +29,7 @@ export default function NavBar() {
     <>
       <div className="bg-white fixed top-0 right-0 left-0 shadow-md">
         <div className="flex justify-between items-center px-11 md:px-14 py-5">
-          <img src={logo} alt={logo} className="w-24 md:w-16 h-24 md:h-16" />
+          <img src={logo} alt={logo} className="w-16 md:w-16 h-16 md:h-16" />
 
           <div className=" hidden md:block">
             <div className="flex justify-center items-center rounded-2xl space-x-5 px-3 py-2">
@@ -72,13 +72,13 @@ export default function NavBar() {
               {openMenu ? (
                 <IoMdClose
                   size={22}
-                  className="text-slate-200"
+                  className="ext-3xl font-bold text-[#0c296d]"
                   aria-hidden="true"
                 />
               ) : (
                 <HiMenuAlt4
                   size={22}
-                  className="text-slate-200"
+                  className="ext-3xl font-bold text-[#0c296d]"
                   aria-hidden="true"
                 />
               )}
