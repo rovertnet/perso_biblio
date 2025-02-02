@@ -1,3 +1,5 @@
+import aboutimg from "../../../assets/image/hero1.jpg"
+
 
 export default function AboutSection() {
   return (
@@ -10,8 +12,17 @@ export default function AboutSection() {
           Une brève explication sur notre bibliothèque
         </h2>
         {/*  */}
-        <div className="py-10 md:py-10 flex flex-col md:flex-row ">
-          <div className="flex flex-col gap-5"></div>
+        <div className="py-10 md:py-10 flex flex-col md:flex-row gap-20 ">
+          <div className="flex flex-col gap-5">
+            <img
+              src={aboutimg}
+              alt="about image"
+              className="rounded-md object-cover w-full h-full md:w-full md:h-full"
+            />
+            <h2 className="font-extrabold text-2xl text-slate-900 pb-3.5 text-center">
+              Une brève explication sur notre bibliothèque
+            </h2>
+          </div>
         </div>
       </div>
     </>
