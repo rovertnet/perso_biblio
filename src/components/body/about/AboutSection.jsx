@@ -13,7 +13,7 @@ export default function AboutSection() {
         </h2>
         {/*  */}
         <div className="py-10 md:py-10 flex flex-col md:flex-row gap-20 ">
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-5 max-w-lg">
             <img
               src={aboutimg}
               alt="about image"
@@ -49,7 +49,7 @@ export default function AboutSection() {
 
             <div className="bg-white px-5 py-7 border-[1px] border-slate-400 rounded-md">
               <h1 className="font-extrabold text-3xl text-slate-950 pb-3 text-start">
-                +30.3K
+                +80.3K
               </h1>
               <span className="font-semibold text-lg text-start text-slate-700">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -60,7 +60,7 @@ export default function AboutSection() {
 
             <div className="bg-white px-5 py-7 border-[1px] border-slate-400 rounded-md">
               <h1 className="font-extrabold text-3xl text-slate-950 pb-3 text-start">
-                +30.3K
+                +60.3K
               </h1>
               <span className="font-semibold text-lg text-start text-slate-700">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
