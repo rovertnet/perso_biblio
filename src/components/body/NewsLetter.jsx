@@ -9,7 +9,7 @@ export default function NewsLetter() {
             excepturi amet rerum labor
           </p>
           <form action="#" className="w-full sm:w-full md:w-full lg:w-full">
-            <div className="py-5 flex lg:flex-col space-x-3">
+            <div className="py-5 flex lg:flex-col md:flex-row space-x-3">
               <input
                 type="mail"
                 className="w-full px-5 py-3 text-slate-900 outline-0 focus:outline-0 sm:w-full md:w-full lg:w-full bg-white border-[1px] border-slate-700 rounded-lg"
