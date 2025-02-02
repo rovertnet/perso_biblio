@@ -19,7 +19,7 @@ export default function AboutSection() {
               alt="about image"
               className="rounded-md object-cover w-full h-full md:w-full md:h-full"
             />
-            <h2 className="font-extrabold text-2xl text-slate-900 pb-3.5 text-center">
+            <h2 className="font-extrabold text-2xl text-slate-900 pb-3.5 text-start">
               Une brève explication sur notre bibliothèque
             </h2>
             <span className="font-semibold text-"></span>
