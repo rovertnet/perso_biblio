@@ -28,10 +28,10 @@ export default function NavBar() {
   return (
     <>
       <div className="bg-white fixed top-0 right-0 left-0 shadow-md">
-        <div className="flex justify-between items-center px-9 md:px-14 md:py-5 py-3">
+        <div className="flex justify-between items-center px-9 md:px-14 sm:py-14 md:py-5 lg:py-14 xl: py-3">
           <img src={logo} alt={logo} className="w-16 md:w-16 h-16 md:h-16" />
 
-          <div className=" hidden md:block">
+          <div className=" hidden sm:hidden md:block lg:block">
             <div className="flex justify-center items-center rounded-2xl space-x-5 px-3 py-2">
               {navigation.map((item) => (
                 <NavLink
@@ -52,7 +52,7 @@ export default function NavBar() {
             </div>
           </div>
 
-          <div className=" hidden md:block">
+          <div className=" hidden sm:hidden md:block lg:block">
             <div className="flex space-x-3">
               <button className="font-bold cursor-pointer text-lg md:text-lg py-2 md:py-2 px-3 md:px-3 text-slate-100 rounded-xl bg-[#0c296d] hover:bg-blue-00">
                 Sign up
