@@ -28,7 +28,7 @@ export default function AboutSection() {
               quisquam voluptas eveniet, repudiandae reiciendis ab sapiente
               earum itaque cumque aliquid odit. Consequuntur, quia.
             </span>
-            <button className="font-bold bg-blue-950 text-slate-100 px-3 py-2 rounded-md">
+            <button className="font-bold bg-blue-950 text-slate-100 px-3 py-2 rounded-md text-start">
               Contact-nous
             </button>
           </div>
