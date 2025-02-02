@@ -98,7 +98,7 @@ export default function NavBar() {
               <NavLink
                 key={item.name}
                 to={item.to}
-                
+                offset={-100}
                 className={({ isActive }) =>
                   classNames(
                     isActive
