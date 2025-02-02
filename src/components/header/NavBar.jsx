@@ -3,6 +3,7 @@ import logo from "../../assets/image/logobiblio.png"
 import { FaCartArrowDown } from "react-icons/fa";
 import { HiMenuAlt4 } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
+import { useState } from "react";
 
 
 const navigation = [
@@ -18,7 +19,7 @@ function classNames(...classes) {
 }
 
 export default function NavBar() {
-  const [openMenu, setOpenMenu] = useSta(false);
+  const [openMenu, setOpenMenu] = useState(false);
 
   const toggleMenu = () => {
     setOpenMenu(!openMenu);
@@ -64,7 +65,10 @@ export default function NavBar() {
 
           {/* Mobile menu button */}
           <div className=" md:hidden">
-            <button className="font-bold cursor-pointer text-lg md:text-lg py-3 md:py-3 px-3 md:px-3 text-slate-100 rounded-full bg-[#d2defb]">
+            <button
+              onClick={toggleMenu}
+              className="font-bold cursor-pointer text-lg md:text-lg py-3 md:py-3 px-3 md:px-3 text-slate-100 rounded-full bg-[#d2defb]"
+            >
               {openMenu ? (
                 <IoMdClose
                   size={22}
@@ -94,7 +98,7 @@ export default function NavBar() {
                   classNames(
                     isActive
                       ? " text-blue-500 py-1.5"
-                      : "text-gray-900 hover:text-gray-800",
+                      : "text-gray-900 hover:text-blue-500",
                     " text-4xl font-bold"
                   )
                 }
