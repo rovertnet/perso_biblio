@@ -6,6 +6,9 @@ export default function AboutSection() {
         <h2 className="font-bold text-base text-slate-300 py-5 text-center">
           A propos
         </h2>
+        <h2 className="font-bold text-2xl text-slate-300 py-5 text-center">
+          A propos
+        </h2>
         <div className=""></div>
       </div>
     </>
