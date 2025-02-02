@@ -28,8 +28,8 @@ export default function AboutSection() {
               quisquam voluptas eveniet, repudiandae reiciendis ab sapiente
               earum itaque cumque aliquid odit. Consequuntur, quia.
             </span>
-            <div className="flex justify-start items-start">
-              <button className="font-bold bg-blue-950 text-slate-100 px-3 py-2 rounded-md text-start">
+            <div className="flex md:justify-start md:items-start">
+              <button className="font-bold bg-blue-950 text-slate-100 px-5 py-2 rounded-md text-start">
                 Contact-nous
               </button>
             </div>
