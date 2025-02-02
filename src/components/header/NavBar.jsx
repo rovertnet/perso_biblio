@@ -67,18 +67,18 @@ export default function NavBar() {
           <div className=" md:hidden">
             <button
               onClick={toggleMenu}
-              className="font-bold cursor-pointer text-lg md:text-lg py-3 md:py-3 px-3 md:px-3 text-slate-100 rounded-full bg-[#d2defb]"
+              className="font-bold cursor-pointer text-lg md:text-lg py-3 px-3 text-slate-100 rounded-full bg-[#d2defb]"
             >
               {openMenu ? (
                 <IoMdClose
                   size={22}
-                  className="ext-3xl font-bold text-[#0c296d]"
+                  className="text-3xl font-bold text-[#0c296d]"
                   aria-hidden="true"
                 />
               ) : (
                 <HiMenuAlt4
                   size={22}
-                  className="ext-3xl font-bold text-[#0c296d]"
+                  className="text-3xl font-bold text-[#0c296d]"
                   aria-hidden="true"
                 />
               )}
