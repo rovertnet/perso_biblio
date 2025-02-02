@@ -28,10 +28,10 @@ export default function NavBar() {
   return (
     <>
       <div className="bg-white fixed top-0 right-0 left-0 shadow-md">
-        <div className="flex justify-between items-center px-9 md:px-14 sm:py-14 md:py-5 lg:py-14 xl: py-3">
+        <div className="flex justify-between items-center px-9 md:px-14 sm:py-10 md:py-5 lg:py-14 xl:py-14 py-3">
           <img src={logo} alt={logo} className="w-16 md:w-16 h-16 md:h-16" />
 
-          <div className=" hidden sm:hidden md:block lg:block">
+          <div className=" hidden sm:hidden md:block lg:block xl:block">
             <div className="flex justify-center items-center rounded-2xl space-x-5 px-3 py-2">
               {navigation.map((item) => (
                 <NavLink
