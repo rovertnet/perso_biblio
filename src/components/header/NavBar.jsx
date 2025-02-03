@@ -54,10 +54,10 @@ export default function NavBar() {
 
           <div className=" hidden sm:hidden md:block lg:block">
             <div className="flex space-x-3">
-              <button className="font-bold cursor-pointer text-lg md:text-lg py-2 md:py-2 px-3 md:px-3 text-slate-100 rounded-xl bg-[#0c296d] hover:bg-blue-00">
+              <button className="font-bold cursor-pointer text-lg md:text-lg py-2 md:py-2 px-3 md:px-3 text-[#d2defb] rounded-xl bg-[#0c296d] hover:bg-blue-00">
                 Sign up
               </button>
-              <button className="font-bold cursor-pointer text-lg md:text-lg py-3 md:py-3 px-3 md:px-3 text-slate-100 rounded-full bg-[#d2defb]">
+              <button className="font-bold border-[1px] border-[#0c296d] cursor-pointer text-lg md:text-lg py-3 md:py-3 px-3 md:px-3 text-slate-100 rounded-full bg-[#d2defb]">
                 <FaCartArrowDown className="text-xl font-bold text-[#0c296d]" />
               </button>
             </div>
