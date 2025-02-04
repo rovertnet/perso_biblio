@@ -29,7 +29,7 @@ export default function AboutSection() {
               earum itaque cumque aliquid odit. Consequuntur, quia.
             </span>
             <div className="flex md:justify-start md:items-start">
-              <button className="font-bold bg-blue-950 text-slate-100 px-16 py-3 rounded-md text-start">
+              <button className="font-bold text-xl hover:bg-blue-900 bg-blue-950 text-slate-100 px-16 py-3 rounded-md text-start">
                 Contact-nous
               </button>
             </div>
