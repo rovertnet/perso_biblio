@@ -1,6 +1,5 @@
 import Topbanner from "../../components/body/topbooks/Topbanner";
-import Topbooks from "../../components/body/TopBooks"
-
+import Topbooks from "../../components/body/TopBooks";
 
 export default function Topbook() {
   return (
