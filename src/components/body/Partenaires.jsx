@@ -107,7 +107,7 @@ export default function Partenaires({
 
   return (
     <>
-      <div className="">
+      <div className="block px-14 py-6 bg-[#f7f4f4]">
         <div className="relative h-[500px] w-full overflow-hidden">
           <div
             className="absolute top-0 left-0 h-full w-[48px] z-10"
