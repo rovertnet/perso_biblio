@@ -109,8 +109,9 @@ export default function Partenaires({
     <>
       <div className="block px-14 py-6 bg-[#f7f4f4]">
         <div className="relative  w-full overflow-hidden">
-          
-
+          <h2 className="font-extrabold text-3xl text-slate-900 pb-3.5 text-center">
+            Nos Partenaires
+          </h2>
           <div className="flex h-full items-center justify-center [perspective:1000px] [transform-style:preserve-3d]">
             <motion.div
               drag="x"
