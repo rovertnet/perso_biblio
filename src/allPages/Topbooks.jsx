@@ -1,10 +1,11 @@
-import Topbanner from "../../components/body/topbooks/Topbanner";
+
 import Topbooks from "../../components/body/TopBooks";
+import BannerTopBooks from "../components/body/topbooks/Topbanner";
 
 export default function Books() {
   return (
     <>
-      <Topbanner />
+      <BannerTopBooks />
       <Topbooks />
     </>
   );
