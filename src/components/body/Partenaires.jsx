@@ -108,7 +108,7 @@ export default function Partenaires({
   return (
     <>
       <div className="block px-14 py-6 bg-[#f7f4f4]">
-        <div className="relative h-[500px] w-full overflow-hidden">
+        <div className="relative  w-full overflow-hidden">
           
 
           <div className="flex h-full items-center justify-center [perspective:1000px] [transform-style:preserve-3d]">
