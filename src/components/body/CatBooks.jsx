@@ -1,8 +1,7 @@
-
-import { useRef } from "react"
+import { motion, useScroll } from "motion/react";
+import { useRef } from "react";
 
 export default function CatBooks() {
-
   const ref = useRef(null);
   const { scrollXProgress } = useScroll({ container: ref });
 
@@ -33,10 +32,10 @@ export default function CatBooks() {
   );
 }
 
-
 function StyleSheet() {
   return (
-    <style>{`
+    <style>
+      {`
             #example {
               width: 100vw;
               max-width: 400px;
