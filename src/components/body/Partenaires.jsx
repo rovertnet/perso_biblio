@@ -107,7 +107,7 @@ export default function Partenaires({
 
   return (
     <>
-      <div className="block px-8 md:px-14 py-6 bg-[#f7f4f4]">
+      <div className="block px-8 md:px-14 py-10 md:py-14 bg-[#f7f4f4]">
         <div className="relative  w-full overflow-hidden">
           <h2 className="font-extrabold text-3xl text-slate-900 pb-10 text-center">
             Nos Partenaires
