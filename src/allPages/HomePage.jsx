@@ -1,3 +1,4 @@
+import CatBooks from "../components/body/CatBooks";
 import CatSection from "../components/body/CatSection";
 import HeroSection from "../components/body/HeroSection";
 import NewsLetter from "../components/body/NewsLetter";
@@ -10,6 +11,7 @@ export default function HomePage() {
     <>
       <HeroSection />
       <CatSection />
+      <CatBooks />
       <TopBooks />
       <Populaires />
       <NewsLetter />
