@@ -3,7 +3,7 @@ import TopBooks from "../components/body/TopBooks"
 import Populaires from "../components/body/Populaires";
 
 
-export default function Shop() {
+export default function ShopBooks() {
   return (
     <>
       <Shopbanner />
