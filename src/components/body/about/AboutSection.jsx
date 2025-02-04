@@ -29,14 +29,14 @@ export default function AboutSection() {
               earum itaque cumque aliquid odit. Consequuntur, quia.
             </span>
             <div className="flex md:justify-start md:items-start">
-              <button className="font-bold bg-blue-950 text-slate-100 px-5 py-2 rounded-md text-start">
+              <button className="font-bold bg-blue-950 text-slate-100 px-16 py-3 rounded-md text-start">
                 Contact-nous
               </button>
             </div>
           </div>
 
           <div className="flex flex-col gap-5">
-            <div className="bg-white px-5 py-7 border-[1px] border-slate-200 rounded-md">
+            <div className="bg-white px-5 py-7 border-[1px] border-slate-300 rounded-md">
               <h1 className="font-extrabold text-3xl text-slate-950 pb-3 text-start">
                 +30.3K
               </h1>
@@ -47,7 +47,7 @@ export default function AboutSection() {
               </span>
             </div>
 
-            <div className="bg-white px-5 py-7 border-[1px] border-slate-200 rounded-md">
+            <div className="bg-white px-5 py-7 border-[1px] border-slate-300 rounded-md">
               <h1 className="font-extrabold text-3xl text-slate-950 pb-3 text-start">
                 +80.7K
               </h1>
@@ -58,7 +58,7 @@ export default function AboutSection() {
               </span>
             </div>
 
-            <div className="bg-white px-5 py-7 border-[1px] border-slate-200 rounded-md">
+            <div className="bg-white px-5 py-7 border-[1px] border-slate-300 rounded-md">
               <h1 className="font-extrabold text-3xl text-slate-950 pb-3 text-start">
                 +60.8K
               </h1>
