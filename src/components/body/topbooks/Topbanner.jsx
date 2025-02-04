@@ -1,6 +1,6 @@
 
 
-export default function Topbanner() {
+export default function BannerTopBooks() {
   return (
     <>
       <div className="block h-full w-full py-32 px-32 hero">
