@@ -133,7 +133,7 @@ export default function Partenaires({
               {images.map((url, i) => (
                 <div
                   key={i}
-                  className="group absolute flex h-fit items-center justify-center p-[8%] [backface-visibility:hidden] md:p-[6%]"
+                  className="group absolute flex h-fit items-center justify-center gap-6 md:gap-10 p-[8%] [backface-visibility:hidden] md:p-[6%]"
                   style={{
                     width: `${faceWidth}px`,
                     transform: `rotateY(${
@@ -144,9 +144,9 @@ export default function Partenaires({
                   <img
                     src={url}
                     alt="gallery"
-                    className="pointer-events-none h-[120px] w-[300px] rounded-[15px] border-[3px] border-white object-cover
+                    className="pointer-events-none h-[220px] md:h-[120px] md:w-[300px] w-[380px] rounded-[15px] border-[5px] border-white object-cover
                            transition-transform duration-300 ease-out group-hover:scale-105
-                           sm:h-[100px] sm:w-[220px]"
+                           "
                   />
                 </div>
               ))}

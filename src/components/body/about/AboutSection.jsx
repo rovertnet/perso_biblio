@@ -4,7 +4,7 @@ import aboutimg from "../../../assets/image/hero1.jpg"
 export default function AboutSection() {
   return (
     <>
-      <div className="block px-8 md:px-14 py-6 bg-[#f7f4f4]">
+      <div className="block px-8 md:px-14 pt-10 md:pt-14 bg-[#f7f4f4]">
         <h2 className="font-bold text-base text-slate-500 py-3 text-center">
           A propos
         </h2>
