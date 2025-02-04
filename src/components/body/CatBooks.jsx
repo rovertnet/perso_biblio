@@ -1,4 +1,4 @@
-import { motion, useScroll } from "motion/react"
+
 import { useRef } from "react"
 
 export default function CatBooks() {
