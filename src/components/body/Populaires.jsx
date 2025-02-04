@@ -3,7 +3,7 @@ import imgproduit from "../../assets/image/P1.jpg"
 export default function Populaires() {
   return (
     <>
-      <div className="block px-14 py-6 ">
+      <div className="block px-8 md:px-14 py-6 ">
         <div className="flex justify-between items-center">
           <h2 className="font-bold text-lg text-slate-900 py-5">Populaires</h2>
           <h3 className="font-bold text-sm text-slate-400 py-5">Voir tout</h3>
