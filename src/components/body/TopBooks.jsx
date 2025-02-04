@@ -1,6 +1,6 @@
 import imgproduit from "../../assets/image/P2.jpg"
 
-export default function TopBooks() {
+export default function BookTop() {
   return (
     <>
       <div className="block px-14 py-6 ">
