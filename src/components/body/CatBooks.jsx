@@ -8,7 +8,7 @@ export default function CatBooks() {
 
   return (
     <>
-      <div id="example">
+      <div id="example" className="block px-8 md:px-14 py-6 bg-[#f7f4f4]">
         <svg id="progress" width="80" height="80" viewBox="0 0 100 100">
           <circle cx="50" cy="50" r="30" pathLength="1" className="bg" />
           <motion.circle
