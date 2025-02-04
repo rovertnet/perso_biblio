@@ -27,7 +27,7 @@ export default function NavBar() {
 
   return (
     <>
-      <div className="bg-white fixed top-0 right-0 left-0 shadow-md">
+      <div className="bg-white fixed top-0 right-0 left-0 shadow-md z-30">
         <div className="flex justify-between items-center px-8 md:px-14 py-3">
           <img src={logo} alt={logo} className="w-16 md:w-16 h-16 md:h-16" />
 
