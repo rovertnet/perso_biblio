@@ -1,6 +1,7 @@
 import { FaPhoneAlt } from "react-icons/fa";
 import { SiGooglemaps } from "react-icons/si";
 import { BiWorld } from "react-icons/bi";
+import { IoMail } from "react-icons/io5";
 
 
 export default function ContactForm() {
@@ -11,6 +12,7 @@ export default function ContactForm() {
           <FaPhoneAlt className="font-bold text-blue-100 text-5xl" />
           <SiGooglemaps className="font-bold text-blue-100 text-5xl" />
           <BiWorld className="font-bold text-blue-100 text-5xl" />
+          <IoMail className="font-bold text-blue-100 text-5xl" />
         </div>
       </div>
     </>
