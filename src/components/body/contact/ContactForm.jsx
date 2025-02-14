@@ -1,5 +1,6 @@
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
+import { FaLinkedin } from "react-icons/fa";
 
 
 export default function ContactForm() {
@@ -9,7 +10,7 @@ export default function ContactForm() {
         <div className="flex justify-center items-center md:gap-36 md:py-10 py-9">
           <FaPhoneAlt className="font-bold text-blue-100 text-3xl" />
           <IoMdMail className="font-bold text-blue-100 text-3xl" />
-          <IoMdMail className="font-bold text-blue-100 text-3xl" />
+          <FaLinkedin className="font-bold text-blue-100 text-3xl" />
         </div>
       </div>
     </>
