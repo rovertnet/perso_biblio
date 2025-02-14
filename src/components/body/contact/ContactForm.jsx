@@ -1,5 +1,6 @@
 import { FaPhoneAlt } from "react-icons/fa";
 import { SiGooglemaps } from "react-icons/si";
+import { BiWorld } from "react-icons/bi";
 
 
 export default function ContactForm() {
@@ -9,7 +10,7 @@ export default function ContactForm() {
         <div className="flex justify-center items-center md:gap-36 md:py-10 py-9">
           <FaPhoneAlt className="font-bold text-blue-100 text-5xl" />
           <SiGooglemaps className="font-bold text-blue-100 text-5xl" />
-          <SiGooglemaps className="font-bold text-blue-100 text-5xl" />
+          <BiWorld className="font-bold text-blue-100 text-5xl" />
         </div>
       </div>
     </>
