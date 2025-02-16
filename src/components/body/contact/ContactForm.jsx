@@ -34,6 +34,8 @@ export default function ContactForm() {
             </h3>
           </div>
         </div>
+
+        {/* Formulaire de contact */}
       </div>
     </>
   );
