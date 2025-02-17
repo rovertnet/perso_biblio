@@ -8,7 +8,7 @@ export default function ContactForm() {
   return (
     <>
       <div className="block px-8 md:px-14 py-6 bg-black/85 md:-mt-24 -mt-32 md:mx-28 mx-8 md:mb-14 mb-6 rounded-md">
-        <div className="flex flex-col md:flex-row  md:justify-center md:items-center justify-start items-start md:gap-32 gap-7 md:py-10 py-9">
+        <div className="grid md:grid-cols-4 grid-cols-2 md:gap-12 gap-3 md:py-10 py-9">
           <div className="flex flex-col gap-3">
             <FaPhoneAlt className="font-bold text-blue-100 text-4xl" />
             <h3 className="font-semibold text-lg text-slate-400 ">
@@ -27,7 +27,7 @@ export default function ContactForm() {
           </div>
           <div className="flex flex-col gap-3">
             <IoMail className="font-bold text-blue-100 text-4xl" />
-            <h3 className="font-semibold text-lg text-slate-400 ">
+            <h3 className="font-semibold md:text-lg text-sm text-slate-400 ">
               rovertnet.roberto@gmail.com
             </h3>
           </div>
