@@ -70,6 +70,7 @@ export default function ContactForm() {
                 id=""
                 cols="15"
                 rows="10"
+                placeholder="Message"
               ></textarea>
             </div>
           </form>
