@@ -74,8 +74,8 @@ export default function ContactForm() {
               ></textarea>
             </div>
 
-            <div className="">
-              <button className="px-10 py-3 flex justify-end items-end font-bold text-2xl text-slate-100 rounded-md bg-blue-900">
+            <div className="flex justify-end items-end">
+              <button className="px-20 py-3 font-bold text-2xl hover:bg-blue-800 cursor-pointer text-slate-100 rounded-md bg-blue-900">
                 Envoyez
               </button>
             </div>
