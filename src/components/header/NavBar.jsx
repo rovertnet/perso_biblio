@@ -32,7 +32,7 @@ export default function NavBar() {
           <img src={logo} alt={logo} className="w-16 md:w-16 h-16 md:h-16" />
 
           <div className=" hidden sm:hidden md:block lg:block xl:block">
-            <div className="flex justify-center items-center rounded-2xl space-x-5 px-3 py-2">
+            <div className="flex justify-center items-center rounded-2xl space-x-14 px-3 py-2">
               {navigation.map((item) => (
                 <NavLink
                   key={item.name}
