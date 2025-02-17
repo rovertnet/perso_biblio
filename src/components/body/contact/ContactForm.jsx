@@ -39,7 +39,7 @@ export default function ContactForm() {
         <div className="pt-10">
           <form action="#" className="w-full md:w-full flex flex-col gap-6">
             <div className="">
-              <input type="text" className="px-5 py-3 text-white bg-black outline-0 focus:outline-0 hover:outline-1 hover:border-[1px] border-slate-300" name="nom" placeholder="Nom complet" />
+              <input type="text" className="px-5 py-3 text-white bg-black outline-0 focus:outline-0 hover:outline-1 hover:border-[1px] border-slate-300 rounded-b-md text-xl" name="nom" placeholder="Nom complet" />
             </div>
           </form>
         </div>
