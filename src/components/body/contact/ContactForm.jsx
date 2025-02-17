@@ -23,9 +23,7 @@ export default function ContactForm() {
           </div>
           <div className="flex flex-col gap-3">
             <BiWorld className="font-bold text-blue-100 text-4xl" />
-            <h3 className="font-semibold text-lg text-slate-400 "> 
-              RD Congo
-            </h3>
+            <h3 className="font-semibold text-lg text-slate-400 ">RD Congo</h3>
           </div>
           <div className="flex flex-col gap-3">
             <IoMail className="font-bold text-blue-100 text-4xl" />
@@ -39,8 +37,33 @@ export default function ContactForm() {
         <div className="pt-10">
           <form action="#" className="w-full md:w-full flex flex-col gap-6">
             <div className="">
-              <input type="text" className="px-5 py-3 text-white bg-black outline-0 focus:outline-0 hover:outline-1 hover:border-[1px] border-slate-300 rounded-b-md text-xl" name="nom" placeholder="Nom complet" />
+              <input
+                type="text"
+                className="px-5 py-3 text-white bg-black outline-0 focus:outline-1 hover:outline-1 hover:border-[1px] border-slate-300 rounded-b-md text-xl"
+                name="nom"
+                placeholder="Nom complet"
+              />
             </div>
+
+            <div className="">
+              <input
+                type="text"
+                className="px-5 py-3 text-white bg-black outline-0 focus:outline-1 hover:outline-1 hover:border-[1px] border-slate-300 rounded-b-md text-xl"
+                name="nom"
+                placeholder="E-mail"
+              />
+            </div>
+
+            <div className="">
+              <input
+                type="text"
+                className="px-5 py-3 text-white bg-black outline-0 focus:outline-1 hover:outline-1 hover:border-[1px] border-slate-300 rounded-b-md text-xl"
+                name="nom"
+                placeholder="Sujet ou Objet"
+              />
+            </div>
+
+
           </form>
         </div>
       </div>
