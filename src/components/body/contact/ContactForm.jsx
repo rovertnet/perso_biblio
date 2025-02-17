@@ -74,7 +74,11 @@ export default function ContactForm() {
               ></textarea>
             </div>
 
-            
+            <div className="">
+              <button className="px-10 py-5 font-bold text-2xl text-slate-100 rounded-md bg-blue-900">
+                Envoyez
+              </button>
+            </div>
           </form>
         </div>
       </div>
