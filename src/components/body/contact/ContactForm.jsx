@@ -34,7 +34,7 @@ export default function ContactForm() {
         </div>
 
         {/* Formulaire de contact */}
-        <div className="pt-10">
+        <div className="pt-10 flex justify-center items-center">
           <form action="#" className="w-full md:w-full flex flex-col gap-6">
             <div className="">
               <input
