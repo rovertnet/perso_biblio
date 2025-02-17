@@ -1,4 +1,4 @@
-import catimage from "../../assets/image/RP1.jpeg"
+import catimage from "../../assets/image/RP1.jpeg";
 
 export default function CatSection() {
   return (
@@ -12,7 +12,7 @@ export default function CatSection() {
           <div className="bg-white rounded-md px-3 py-3 shadow-md flex flex-col justify-center items-center cursor-pointer">
             <img
               src={catimage}
-              alt={catimage}
+              alt="catimage"
               className="rounded-full h-20 w-20 object-cover"
             />
             <span className="text-sm font-normal py-2 text-center text-slate-800">
@@ -23,7 +23,7 @@ export default function CatSection() {
           <div className="bg-white rounded-md py-3 shadow-md flex flex-col justify-center items-center cursor-pointer">
             <img
               src={catimage}
-              alt={catimage}
+              alt="catimage"
               className="rounded-full h-16 w-16 object-cover"
             />
             <span className="text-sm font-normal py-2 text-center text-slate-800">
@@ -34,7 +34,7 @@ export default function CatSection() {
           <div className="bg-white rounded-md px-5 py-3 shadow-md flex flex-col justify-center items-center cursor-pointer">
             <img
               src={catimage}
-              alt={catimage}
+              alt="catimage"
               className="rounded-full h-16 w-16 object-cover"
             />
             <span className="text-sm font-normal py-2 text-center text-slate-800">
@@ -45,7 +45,7 @@ export default function CatSection() {
           <div className="bg-white rounded-md px-5 py-3 shadow-md flex flex-col justify-center items-center cursor-pointer">
             <img
               src={catimage}
-              alt={catimage}
+              alt="catimage"
               className="rounded-full h-16 w-16 object-cover"
             />
             <span className="text-sm font-normal py-2 text-center text-slate-800">

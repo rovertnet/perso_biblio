@@ -1,12 +1,10 @@
-
-
 export default function HeroSection() {
   return (
     <>
       <div className="block h-full w-full py-32 px-32 hero object-cover md:object-cover">
         <h1 className="font-extrabold flex md:justify-center md:items-center md:text-center md:text-3xl md:max-w-6xl max-w-96 text-center text-base py-10  md:py-14 text-blue-200 uppercase">
-          Bienvenu (e)  à la grande biblothèque de la république
-          démocratique du congo
+          Bienvenue à la grande bibliothèque de la République
+          Démocratique du Congo
         </h1>
 
         <div className="flex justify-center items-center">
