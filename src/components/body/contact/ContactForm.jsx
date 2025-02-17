@@ -69,7 +69,7 @@ export default function ContactForm() {
                 className="w-full px-5 py-3 text-white bg-black outline-0 focus:outline-1 hover:outline-1 hover:border-[1px] border-slate-300 rounded-b-md text-xl"
                 id=""
                 cols="15"
-                rows="20"
+                rows="10"
               ></textarea>
             </div>
           </form>
