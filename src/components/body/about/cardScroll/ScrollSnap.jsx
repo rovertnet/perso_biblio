@@ -5,9 +5,24 @@ export default function ScrollSnap() {
 
   const cards = [
     {
-      image: "https://via.placeholder.com/300",
+      image: "../../../../assets/image/P1.jpg",
       title: "Card 1",
       description: "Description for card 1",
+    },
+    {
+      image: "https://via.placeholder.com/300",
+      title: "Card 2",
+      description: "Description for card 2",
+    },
+    {
+      image: "https://via.placeholder.com/300",
+      title: "Card 2",
+      description: "Description for card 2",
+    },
+    {
+      image: "https://via.placeholder.com/300",
+      title: "Card 2",
+      description: "Description for card 2",
     },
     {
       image: "https://via.placeholder.com/300",
@@ -20,8 +35,8 @@ export default function ScrollSnap() {
 
   return (
     <>
-      <div className="snap-y snap-mandatory h-screen overflow-y-scroll">
-        <div className="flex flex-nowrap snap-x snap-mandatory overflow-x-scroll">
+      <div className="snap-y snap-mandatory h-screen ">
+        <div className="flex flex-nowrap snap-x snap-mandatory">
           {cards.map((card, index) => (
             <Card key={index} {...card} />
           ))}
