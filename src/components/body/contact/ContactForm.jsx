@@ -75,7 +75,7 @@ export default function ContactForm() {
             </div>
 
             <div className="">
-              <button className="px-10 py-5 font-bold text-2xl text-slate-100 rounded-md bg-blue-900">
+              <button className="px-10 py-3 flex justify-end items-end font-bold text-2xl text-slate-100 rounded-md bg-blue-900">
                 Envoyez
               </button>
             </div>
