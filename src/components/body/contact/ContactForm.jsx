@@ -37,7 +37,7 @@ export default function ContactForm() {
 
         {/* Formulaire de contact */}
         <div className="pt-10">
-          <form action="#" className="w-full md:w-full">
+          <form action="#" className="w-full md:w-full flex flex-col gap-6">
             <div className=""></div>
           </form>
         </div>
