@@ -39,7 +39,7 @@ export default function ContactForm() {
             <div className="">
               <input
                 type="text"
-                className="px-5 py-3 text-white bg-black outline-0 focus:outline-1 hover:outline-1 hover:border-[1px] border-slate-300 rounded-b-md text-xl"
+                className="w-full px-5 py-3 text-white bg-black outline-0 focus:outline-1 hover:outline-1 hover:border-[1px] border-slate-300 rounded-b-md text-xl"
                 name="nom"
                 placeholder="Nom complet"
               />
@@ -48,7 +48,7 @@ export default function ContactForm() {
             <div className="">
               <input
                 type="text"
-                className="px-5 py-3 text-white bg-black outline-0 focus:outline-1 hover:outline-1 hover:border-[1px] border-slate-300 rounded-b-md text-xl"
+                className="w-full px-5 py-3 text-white bg-black outline-0 focus:outline-1 hover:outline-1 hover:border-[1px] border-slate-300 rounded-b-md text-xl"
                 name="nom"
                 placeholder="E-mail"
               />
@@ -57,13 +57,11 @@ export default function ContactForm() {
             <div className="">
               <input
                 type="text"
-                className="px-5 py-3 text-white bg-black outline-0 focus:outline-1 hover:outline-1 hover:border-[1px] border-slate-300 rounded-b-md text-xl"
+                className="w-full px-5 py-3 text-white bg-black outline-0 focus:outline-1 hover:outline-1 hover:border-[1px] border-slate-300 rounded-b-md text-xl"
                 name="nom"
                 placeholder="Sujet ou Objet"
               />
             </div>
-
-
           </form>
         </div>
       </div>
