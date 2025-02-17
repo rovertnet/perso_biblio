@@ -4,7 +4,7 @@ export default function NewsLetter() {
     <>
       <div className="w-full bg-[#0c296d] py-14 px-8 md:px-14">
         <div className="flex flex-col md:flex-row gap-16">
-          <p className="font-bold text-4xl text-justufy text-slate-200 max-w-lg">
+          <p className="font-bold text-4xl text-justufy text-slate-200 md:max-w-lg ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
             excepturi amet rerum labor
           </p>
