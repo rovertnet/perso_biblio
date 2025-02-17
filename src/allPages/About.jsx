@@ -1,6 +1,5 @@
 import AboutBanner from "../components/body/about/AboutBanner";
 import AboutSection from "../components/body/about/AboutSection";
-import ScrollSnap from "../components/body/about/cardScroll/ScrollSnap";
 import PartenairesView from "../components/body/PartenairesView";
 
 export default function About() {
@@ -8,7 +7,6 @@ export default function About() {
     <>
       <AboutBanner />
       <AboutSection />
-      <ScrollSnap />
       <PartenairesView />
     </>
   );
