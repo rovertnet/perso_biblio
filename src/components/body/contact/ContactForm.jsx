@@ -75,7 +75,7 @@ export default function ContactForm() {
             </div>
 
             <div className="flex justify-end items-end">
-              <button className="px-20 py-3 font-bold text-2xl hover:bg-blue-800 cursor-pointer text-slate-100 rounded-md bg-blue-900">
+              <button className="md:px-20 px-28 py-3 font-bold text-2xl hover:bg-blue-800 cursor-pointer text-slate-100 rounded-md bg-blue-900">
                 Envoyez
               </button>
             </div>
