@@ -70,6 +70,8 @@ export default function AboutSection() {
             </div>
           </div>
         </div>
+
+        <div className=""></div>
       </div>
     </>
   );
