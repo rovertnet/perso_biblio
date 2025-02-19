@@ -86,12 +86,22 @@ export default function AboutSection() {
                 quisquam voluptas eveniet, repudiandae reiciendis ab sapiente
                 earum itaque cumque aliquid odit. Consequuntur, quia.
               </span>
-              <ul>
-                <li className="font-semibold text-lg text-justify text-slate-700"></li>
-                <li className="font-semibold text-lg text-justify text-slate-700"></li>
-                <li className="font-semibold text-lg text-justify text-slate-700"></li>
-                <li className="font-semibold text-lg text-justify text-slate-700"></li>
-                <li className="font-semibold text-lg text-justify text-slate-700"></li>
+              <ul className="pt-5">
+                <li className="font-semibold text-lg text-justify text-slate-700">
+                  Mission{" "}
+                </li>
+                <li className="font-semibold text-lg text-justify text-slate-700">
+                  Mission{" "}
+                </li>
+                <li className="font-semibold text-lg text-justify text-slate-700">
+                  Mission{" "}
+                </li>
+                <li className="font-semibold text-lg text-justify text-slate-700">
+                  Mission{" "}
+                </li>
+                <li className="font-semibold text-lg text-justify text-slate-700">
+                  Mission{" "}
+                </li>
               </ul>
             </div>
             <div className="border-[1px] border-slate-300 rounded-md px-10 py-7 w-full bg-white h-full">
