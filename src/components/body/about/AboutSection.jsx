@@ -103,6 +103,11 @@ export default function AboutSection() {
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 </li>
               </ul>
+              <p className="font-semibold text-lg text-justify text-slate-700 md:pt-5 pt-3">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Molestias, ducimus sit distinctio a est quibusdam assumenda
+                quisquam voluptas eveniet.
+              </p>
             </div>
             <div className="border-[1px] border-slate-300 rounded-md px-10 py-7 w-full bg-white h-full">
               <h2 className="font-extrabold text-2xl text-slate-900 pb-3 text-start">
