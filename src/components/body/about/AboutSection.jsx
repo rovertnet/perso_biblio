@@ -72,7 +72,7 @@ export default function AboutSection() {
         </div>
 
         <div className="Block md:py-12 py-10">
-          <h2 className="font-extrabold text-3xl text-slate-900 pb-3.5 text-center">
+          <h2 className="font-extrabold text-3xl text-slate-900 pb-12 text-center">
             Notre Mission et Vision
           </h2>
           <div className="flex flex-col md:flex-row gap-16">
