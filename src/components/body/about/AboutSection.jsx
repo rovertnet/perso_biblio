@@ -76,7 +76,7 @@ export default function AboutSection() {
             Notre Mission et Vision
           </h2>
           <div className="flex flex-col md:flex-row gap-16">
-            <div className="border-[1px] border-slate-300 rounded-md px-5 py-7 w-full bg-white h-full">
+            <div className="border-[1px] border-slate-300 rounded-md px-10 py-7 w-full bg-white h-full">
               <h2 className="font-extrabold text-2xl text-slate-900 pb-3 text-start">
                 Notre Mission
               </h2>
@@ -84,23 +84,23 @@ export default function AboutSection() {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Molestias, ducimus sit distinctio a est quibusdam assumenda
                 quisquam voluptas eveniet, repudiandae reiciendis ab sapiente
-                earum itaque cumque aliquid odit. Consequuntur, quia.
+                earum itaque cumque aliquid odit. Consequuntur, quia :
               </span>
-              <ul className="pt-5">
+              <ul className="pt-5 list-disc px-12">
                 <li className="font-semibold text-lg text-justify text-slate-700">
-                  Mission{" "}
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 </li>
                 <li className="font-semibold text-lg text-justify text-slate-700">
-                  Mission{" "}
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 </li>
                 <li className="font-semibold text-lg text-justify text-slate-700">
-                  Mission{" "}
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 </li>
                 <li className="font-semibold text-lg text-justify text-slate-700">
-                  Mission{" "}
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 </li>
                 <li className="font-semibold text-lg text-justify text-slate-700">
-                  Mission{" "}
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 </li>
               </ul>
             </div>
