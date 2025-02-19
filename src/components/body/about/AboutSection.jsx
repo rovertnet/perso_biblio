@@ -72,7 +72,9 @@ export default function AboutSection() {
         </div>
 
         <div className="Block md:py-12 py-10">
-          <div className="flex flex-col md:flex-row"></div>
+          <div className="flex flex-col md:flex-row gap-16">
+            <div className="border-[1px] border-slate-400 rounded-md px-5 py-7"></div>
+          </div>
         </div>
       </div>
     </>
