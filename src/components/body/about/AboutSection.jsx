@@ -97,6 +97,12 @@ export default function AboutSection() {
                 quisquam voluptas eveniet, repudiandae reiciendis ab sapiente
                 earum itaque cumque aliquid odit. Consequuntur, quia.
               </span>
+              <span className="font-semibold text-lg text-justify text-slate-700 pt-3">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Molestias, ducimus sit distinctio a est quibusdam assumenda
+                quisquam voluptas eveniet, repudiandae reiciendis ab sapiente
+                earum itaque cumque aliquid odit. Consequuntur, quia.
+              </span>
             </div>
           </div>
         </div>
