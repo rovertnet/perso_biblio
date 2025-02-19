@@ -76,8 +76,8 @@ export default function AboutSection() {
             Notre Mission et Vision
           </h2>
           <div className="flex flex-col md:flex-row gap-16">
-            <div className="border-[1px] border-slate-400 rounded-md px-5 py-7 w-full bg-"></div>
-            <div className="border-[1px] border-slate-400 rounded-md px-5 py-7 w-full bg-"></div>
+            <div className="border-[1px] border-slate-300 rounded-md px-5 py-7 w-full bg-white"></div>
+            <div className="border-[1px] border-slate-300 rounded-md px-5 py-7 w-full bg-white"></div>
           </div>
         </div>
       </div>
