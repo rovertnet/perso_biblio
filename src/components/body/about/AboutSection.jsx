@@ -72,6 +72,9 @@ export default function AboutSection() {
         </div>
 
         <div className="Block md:py-12 py-10">
+          <h2 className="font-extrabold text-3xl text-slate-900 pb-3.5 text-center">
+            Une brève explication sur notre bibliothèque
+          </h2>
           <div className="flex flex-col md:flex-row gap-16">
             <div className="border-[1px] border-slate-400 rounded-md px-5 py-7"></div>
             <div className="border-[1px] border-slate-400 rounded-md px-5 py-7"></div>
