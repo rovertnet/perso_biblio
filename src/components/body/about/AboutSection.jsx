@@ -76,8 +76,28 @@ export default function AboutSection() {
             Notre Mission et Vision
           </h2>
           <div className="flex flex-col md:flex-row gap-16">
-            <div className="border-[1px] border-slate-300 rounded-md px-5 py-7 w-full bg-white"></div>
-            <div className="border-[1px] border-slate-300 rounded-md px-5 py-7 w-full bg-white"></div>
+            <div className="border-[1px] border-slate-300 rounded-md px-5 py-7 w-full bg-white h-full">
+              <h2 className="font-extrabold text-2xl text-slate-900 pb-3 text-start">
+                Notre Mission
+              </h2>
+              <span className="font-semibold text-lg text-justify text-slate-700">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Molestias, ducimus sit distinctio a est quibusdam assumenda
+                quisquam voluptas eveniet, repudiandae reiciendis ab sapiente
+                earum itaque cumque aliquid odit. Consequuntur, quia.
+              </span>
+            </div>
+            <div className="border-[1px] border-slate-300 rounded-md px-5 py-7 w-full bg-white h-full">
+              <h2 className="font-extrabold text-2xl text-slate-900 pb-3 text-start">
+                Notre Vision
+              </h2>
+              <span className="font-semibold text-lg text-justify text-slate-700">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Molestias, ducimus sit distinctio a est quibusdam assumenda
+                quisquam voluptas eveniet, repudiandae reiciendis ab sapiente
+                earum itaque cumque aliquid odit. Consequuntur, quia.
+              </span>
+            </div>
           </div>
         </div>
       </div>
