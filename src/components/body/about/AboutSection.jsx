@@ -86,23 +86,36 @@ export default function AboutSection() {
                 quisquam voluptas eveniet, repudiandae reiciendis ab sapiente
                 earum itaque cumque aliquid odit. Consequuntur, quia.
               </span>
+              <ul>
+                <li className="font-semibold text-lg text-justify text-slate-700"></li>
+                <li className="font-semibold text-lg text-justify text-slate-700"></li>
+                <li className="font-semibold text-lg text-justify text-slate-700"></li>
+                <li className="font-semibold text-lg text-justify text-slate-700"></li>
+                <li className="font-semibold text-lg text-justify text-slate-700"></li>
+              </ul>
             </div>
-            <div className="border-[1px] border-slate-300 rounded-md px-5 py-7 w-full bg-white h-full">
+            <div className="border-[1px] border-slate-300 rounded-md px-10 py-7 w-full bg-white h-full">
               <h2 className="font-extrabold text-2xl text-slate-900 pb-3 text-start">
                 Notre Vision
               </h2>
-              <span className="font-semibold text-lg text-justify text-slate-700">
+              <p className="font-semibold text-lg text-justify text-slate-700">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Molestias, ducimus sit distinctio a est quibusdam assumenda
                 quisquam voluptas eveniet, repudiandae reiciendis ab sapiente
                 earum itaque cumque aliquid odit. Consequuntur, quia.
-              </span>
-              <span className="font-semibold text-lg text-justify text-slate-700 pt-3">
+              </p>
+              <p className="font-semibold text-lg text-justify text-slate-700 md:pt-5 pt-3">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Molestias, ducimus sit distinctio a est quibusdam assumenda
                 quisquam voluptas eveniet, repudiandae reiciendis ab sapiente
                 earum itaque cumque aliquid odit. Consequuntur, quia.
-              </span>
+              </p>
+              <p className="font-semibold text-lg text-justify text-slate-700 md:pt-5 pt-3">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Molestias, ducimus sit distinctio a est quibusdam assumenda
+                quisquam voluptas eveniet, repudiandae reiciendis ab sapiente
+                earum itaque cumque aliquid odit. Consequuntur, quia.
+              </p>
             </div>
           </div>
         </div>
