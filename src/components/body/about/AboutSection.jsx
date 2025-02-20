@@ -1,5 +1,5 @@
 import aboutimg from "../../../assets/image/hero1.jpg"
-
+import logo1 from "../../../assets/image/logo1.jpg"
 
 export default function AboutSection() {
   return (
@@ -139,7 +139,12 @@ export default function AboutSection() {
           <h2 className="font-extrabold text-3xl text-slate-900 pb-12 text-center">
             Nos Partenaires
           </h2>
-          <div className=""></div>
+          <div className="grid md:grid-cols-4 grid-cols-2 gap-10">
+            <img src={logo1} alt={logo1} className="w-16 h-16" />
+            <img src={logo1} alt={logo1} className="w-16 h-16" />
+            <img src={logo1} alt={logo1} className="w-16 h-16" />
+            <img src={logo1} alt={logo1} className="w-16 h-16" />
+          </div>
         </div>
       </div>
     </>
