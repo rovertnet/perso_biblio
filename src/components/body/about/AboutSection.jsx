@@ -137,8 +137,9 @@ export default function AboutSection() {
 
         <div className="Block md:py-12 py-10">
           <h2 className="font-extrabold text-3xl text-slate-900 pb-12 text-center">
-            Notre Mission et Vision
+            Nos Partenaires
           </h2>
+          <div className=""></div>
         </div>
       </div>
     </>
