@@ -7,7 +7,7 @@ import { IoMail } from "react-icons/io5";
 export default function ContactForm() {
   return (
     <>
-      <div className="block px-8 md:px-14 py-6 bg-black/85 md:-mt-32 -mt-32 md:mx-28 mx-2 md:mb-14 mb-6 rounded-md">
+      <div className="block px-8 md:px-14 py-6 bg-black/85 my-20 md:my-20 md:mx-28 mx-2 md:mb-14 mb-6 rounded-md">
         <div className="grid md:grid-cols-4 grid-cols-2 md:gap-12 gap-3 md:py-10 py-9">
           <div className="flex flex-col gap-3">
             <FaPhoneAlt className="font-bold text-blue-100 text-4xl" />
