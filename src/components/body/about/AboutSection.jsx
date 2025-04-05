@@ -1,5 +1,6 @@
 import aboutimg from "../../../assets/image/hero1.jpg"
 import logo1 from "../../../assets/image/logo10.jpg"
+import ClientLogos from "./cardScroll/ScrollSnap"
 
 export default function AboutSection() {
   return (
@@ -134,18 +135,12 @@ export default function AboutSection() {
             </div>
           </div>
         </div>
-
-        <div className="Block md:py-12 py-10">
-          <h2 className="font-extrabold text-3xl text-slate-900 pb-12 text-center">
-            Nos Partenaires
-          </h2>
-          <div className="flex flex-col md:flex-row justify-center items-cent gap-28">
-            <img src={logo1} alt={logo1} className="w-28 h-28" />
-            <img src={logo1} alt={logo1} className="w-28 h-28" />
-            <img src={logo1} alt={logo1} className="w-28 h-28" />
-            <img src={logo1} alt={logo1} className="w-28 h-28" />
-          </div>
-        </div>
+      </div>
+      <div className="Block md:py-12 py-10 w-full md:w-full bg-white">
+        <h2 className="font-extrabold text-3xl text-slate-900 pb-12 text-center">
+          Nos Partenaires
+        </h2>
+        <ClientLogos />
       </div>
     </>
   );
