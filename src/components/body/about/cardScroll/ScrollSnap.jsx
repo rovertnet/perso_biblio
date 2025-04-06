@@ -5,55 +5,55 @@ const logos = [
   // ... (même liste de logos)
   {
     name: "Google",
-    url: "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+    url: "https://www.logo.wine/a/logo/Google/Google-Logo.wine.svg",
   },
   {
     name: "Microsoft",
-    url: "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31",
+    url: "https://www.logo.wine/a/logo/Microsoft/Microsoft-Logo.wine.svg",
   },
   {
     name: "Apple",
-    url: "https://www.apple.com/ac/globalnav/7/fr_FR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__b5er5ngrzxqq_large.svg",
+    url: "https://www.logo.wine/a/logo/Apple_Inc./Apple_Inc.-Logo.wine.svg",
   },
   {
     name: "Amazon",
-    url: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
+    url: "https://www.logo.wine/a/logo/Amazon_(company)/Amazon_(company)-Logo.wine.svg",
   },
   {
     name: "Meta",
-    url: "https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg",
+    url: "https://www.logo.wine/a/logo/Meta_Platforms/Meta_Platforms-Logo.wine.svg",
   },
   {
     name: "Netflix",
-    url: "https://upload.wikimedia.org/wikipedia/commons/6/69/Netflix_logo.svg",
+    url: "https://www.logo.wine/a/logo/Netflix/Netflix-Logo.wine.svg",
   },
   {
     name: "Spotify",
-    url: "https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg",
+    url: "https://www.logo.wine/a/logo/Spotify/Spotify-Logo.wine.svg",
   },
   {
     name: "Slack",
-    url: "https://a.slack-edge.com/bv1-9/slack_logo-ebd5c3b.svg",
+    url: "https://www.logo.wine/a/logo/Slack_Technologies/Slack_Technologies-Logo.wine.svg",
   },
   {
     name: "Zoom",
-    url: "https://upload.wikimedia.org/wikipedia/en/thumb/6/6f/Zoom_communications_logo.svg/1200px-Zoom_communications_logo.svg.png",
+    url: "https://www.logo.wine/a/logo/Zoom_Video_Communications/Zoom_Video_Communications-Logo.wine.svg",
   },
   {
     name: "Dropbox",
-    url: "https://upload.wikimedia.org/wikipedia/commons/4/45/Dropbox_logo_and_wordmark.svg",
+    url: "https://www.logo.wine/a/logo/Dropbox_(service)/Dropbox_(service)-Logo.wine.svg",
   },
   {
     name: "Adobe",
-    url: "https://upload.wikimedia.org/wikipedia/commons/a/a0/Adobe_Corporate_Logo.svg",
+    url: "https://www.logo.wine/a/logo/Adobe_Inc./Adobe_Inc.-Logo.wine.svg",
   },
   {
     name: "Salesforce",
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Salesforce_logo.svg/1200px-Salesforce_logo.svg.png",
+    url: "https://www.logo.wine/a/logo/Salesforce.com/Salesforce.com-Logo.wine.svg",
   },
   {
     name: "Twitter",
-    url: "https://upload.wikimedia.org/wikipedia/fr/thumb/c/c8/Twitter_bird_logo_2012.svg/1200px-Twitter_bird_logo_2012.svg.png",
+    url: "https://www.logo.wine/a/logo/Dell_EMC_XtremIO/Dell_EMC_XtremIO-Logo.wine.svg",
   },
 ];
 
@@ -92,7 +92,8 @@ function ClientLogos() {
               <img
                 src={logo.url}
                 alt={`${logo.name} logo`}
-                className="max-w-full max-h-full object-contain"
+                className="max-w-full max-h-full object-contain w-64 h-64"
+                loading="lazy"
               />
             </div>
           ))}
