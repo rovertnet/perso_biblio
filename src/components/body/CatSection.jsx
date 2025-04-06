@@ -65,145 +65,97 @@ import { Plus, ChevronLeft, ChevronRight } from "lucide-react";
 const stories = [
   {
     id: 1,
-    username: "Votre story",
+    username: "Simple",
     avatar:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150",
+      "https://img.freepik.com/photos-gratuite/arrangement-livres-anglais-nature-morte-high-angle_23-2149440476.jpg?t=st=1743944189~exp=1743947789~hmac=290c439660077d50f4e78a919d5b023fee00eb86f3f90d5cd963968e9672f215&w=740",
     hasStory: false,
     isUser: true,
   },
   {
     id: 2,
-    username: "emma_smith",
+    username: "Sciences",
     avatar:
-      "https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?w=150",
+      "https://img.freepik.com/photos-gratuite/illustration-3d-livre-violet-isole-fond_107791-16378.jpg?t=st=1743944985~exp=1743948585~hmac=6c441479d7a38057f9be06457a173061f6327f1c2f37382b8f0ae570bee22d2c&w=1380",
     hasStory: true,
     viewed: false,
   },
   {
     id: 3,
-    username: "alex.photo",
+    username: "Mathématiques",
     avatar:
-      "https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=150",
+      "https://img.freepik.com/photos-gratuite/illustration-3d-livre-violet-isole-fond_107791-16378.jpg?t=st=1743944985~exp=1743948585~hmac=6c441479d7a38057f9be06457a173061f6327f1c2f37382b8f0ae570bee22d2c&w=1380",
     hasStory: true,
     viewed: false,
   },
   {
     id: 4,
-    username: "sophie_art",
+    username: "Psycho",
     avatar:
-      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150",
+      "https://img.freepik.com/photos-gratuite/livres-anglais-fond-bleu_23-2149440456.jpg?t=st=1743945131~exp=1743948731~hmac=e9779a51929850aef9ded95b209460cae7f81fb1c98da82a78ed555a8af52990&w=740",
     hasStory: true,
     viewed: true,
   },
   {
     id: 5,
-    username: "travel_tom",
+    username: "Histoire",
     avatar:
-      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150",
+      "https://img.freepik.com/photos-gratuite/couverture-du-livre-devant-position-verticale_1101-1118.jpg?t=st=1743945220~exp=1743948820~hmac=e2dffdfacfe1b99d4485c567901f4f0bf808731e4e63d7d2d3fc4d7b60558eb2&w=740",
     hasStory: true,
     viewed: false,
   },
   {
     id: 6,
-    username: "maria.dev",
+    username: "Géographie",
     avatar:
-      "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150",
+      "https://img.freepik.com/photos-gratuite/livre-decoratif-fond-bleu_23-2147615011.jpg?t=st=1743945432~exp=1743949032~hmac=4551cc07390baf2ede4450acf7fb49f61490fcc53cf2d5c5aa1a0f21cfe28c5a&w=740",
     hasStory: true,
     viewed: true,
   },
   {
     id: 7,
-    username: "john_doe",
+    username: "philosophie",
     avatar:
-      "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?w=150",
+      "https://img.freepik.com/photos-gratuite/livre-3d-rendu-manuel-papier-ferme-versets_107791-16792.jpg?t=st=1743945563~exp=1743949163~hmac=0e6b1ea9cf0d4f398c26df94c95bc6f1af1ebe71456e4c7c4a677063ae723bd3&w=1380",
     hasStory: true,
     viewed: false,
   },
   {
     id: 8,
-    username: "lisa_marie",
+    username: "littérature",
     avatar:
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150",
+      "https://img.freepik.com/photos-gratuite/livres-anglais-reposant-table-espace-travail_23-2149429582.jpg?t=st=1743946088~exp=1743949688~hmac=3991de9a5b4418e2029b0d823db107640aa3876738384a86c026ffaaef50a324&w=1380",
     hasStory: true,
     viewed: true,
   },
   {
     id: 9,
-    username: "mark_twain",
+    username: "physique",
     avatar:
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150",
+      "https://img.freepik.com/photos-gratuite/illustration-3d-livres-fermes-ouverts-crayon_107791-15848.jpg?t=st=1743945773~exp=1743949373~hmac=89ffcaed66804a7d6b682630a8e8ad6708abf9a3dbb0a2190cfe2c6c1ff6eb7a&w=1380",
     hasStory: true,
     viewed: false,
   },
   {
     id: 10,
-    username: "jane_doe",
+    username: "chimie",
     avatar:
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150",
+      "https://img.freepik.com/photos-gratuite/organise-dans-livres-verticaux_1101-119.jpg?t=st=1743946375~exp=1743949975~hmac=224cd5344dc36c42afbe46de77f203a3048983d76cfef09d9f05678603be17a8&w=900",
     hasStory: true,
     viewed: true,
   },
   {
     id: 11,
-    username: "peter_parker",
+    username: "biologie",
     avatar:
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150",
+      "https://img.freepik.com/photos-gratuite/livre-3d-rendu-manuel-papier-ferme-versets_107791-16792.jpg?t=st=1743945563~exp=1743949163~hmac=0e6b1ea9cf0d4f398c26df94c95bc6f1af1ebe71456e4c7c4a677063ae723bd3&w=1380",
     hasStory: true,
     viewed: false,
   },
   {
     id: 12,
-    username: "clark_kent",
+    username: "informatique",
     avatar:
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150",
-    hasStory: true,
-    viewed: true,
-  },
-  {
-    id: 13,
-    username: "bruce_wayne",
-    avatar:
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150",
-    hasStory: true,
-    viewed: false,
-  },
-  {
-    id: 14,
-    username: "harry_potter",
-    avatar:
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150",
-    hasStory: true,
-    viewed: true,
-  },
-  {
-    id: 15,
-    username: "hermione_granger",
-    avatar:
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150",
-    hasStory: true,
-    viewed: false,
-  },
-  {
-    id: 16,
-    username: "ron_weasley",
-    avatar:
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150",
-    hasStory: true,
-    viewed: true,
-  },
-  {
-    id: 17,
-    username: "luna_lovegood",
-    avatar:
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150",
-    hasStory: true,
-    viewed: false,
-  },
-  {
-    id: 18,
-    username: "neville_longbottom",
-    avatar:
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150",
+      "https://img.freepik.com/photos-gratuite/couverture-du-livre-devant-position-verticale_1101-1118.jpg?t=st=1743945220~exp=1743948820~hmac=e2dffdfacfe1b99d4485c567901f4f0bf808731e4e63d7d2d3fc4d7b60558eb2&w=740",
     hasStory: true,
     viewed: true,
   },
@@ -212,43 +164,41 @@ const stories = [
 const StoryCircle = ({ story, onClick }) => {
   const borderClass = story.hasStory
     ? story.viewed
-      ? "bg-gradient-to-tr from-gray-300 to-gray-400"
-      : "bg-gradient-to-tr from-yellow-400 via-fuchsia-500 to-orange-500"
+      ? ""
+      : ""
     : "bg-gray-200";
 
   return (
     <motion.div
-      className="flex flex-col items-center space-y-1 cursor-pointer"
+      className="flex flex-col items-center space-y-3 cursor-pointer"
       initial={{ scale: 0.9, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
       whileHover={{ scale: 1.05 }}
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
       onClick={onClick}
     >
-      <div className={`p-[2px] ${borderClass} rounded-full`}>
+      <div className={` ${borderClass} `}>
         <div className="bg-white p-[2px] rounded-full">
           <div className="relative">
             <motion.img
               src={story.avatar}
               alt={story.username}
-              className="w-16 h-16 rounded-full object-cover"
+              className="w-28 h-28 rounded-lg object-cover"
               whileHover={{ scale: 1.1 }}
               transition={{ type: "spring", stiffness: 400, damping: 17 }}
             />
             {story.isUser && (
               <motion.div
-                className="absolute bottom-0 right-0 bg-blue-500 rounded-full p-1 border-2 border-white cursor-pointer"
+                className="absolute bottom-0 right-0  rounded-full p-1 border-2 border-white cursor-pointer"
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
-              >
-                <Plus className="w-4 h-4 text-white" />
-              </motion.div>
+              ></motion.div>
             )}
           </div>
         </div>
       </div>
       <motion.span
-        className="text-xs text-gray-900 truncate w-20 text-center"
+        className="text-lg text-gray-900 truncate w-20 text-center"
         initial={{ y: 5, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.1 }}
