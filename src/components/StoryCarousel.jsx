@@ -118,7 +118,7 @@ export function StoriesCarousel() {
           onScroll={handleScroll}
           className="flex gap-4 overflow-x-auto scroll-smooth pb-4 scrollbar-hide"
         >
-          {/* Create Story Card */}
+          {/* Create Story Card
           <motion.div
             whileHover={{ scale: 1.02 }}
             className="relative flex-shrink-0 cursor-pointer w-[140px] h-[200px] md:w-[160px] md:h-[240px] rounded-xl overflow-hidden shadow-lg bg-white"
@@ -130,7 +130,7 @@ export function StoriesCarousel() {
               </div>
               <p className="text-sm font-medium text-gray-900">Create Story</p>
             </div>
-          </motion.div>
+          </motion.div> */}
 
           {/* Story Cards */}
           {stories.slice(1).map((story) => (
