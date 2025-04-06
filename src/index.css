@@ -1,3 +1,17 @@
 @import "tailwindcss";
 
 div.hero{background-image: url("./assets/image/hero.jpg");background-repeat: no-repeat;background-position: center !important;background-size: cover !important;}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+/* Assurer un défilement fluide */
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
