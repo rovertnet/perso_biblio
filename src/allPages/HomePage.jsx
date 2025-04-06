@@ -1,4 +1,5 @@
 
+import Client from "../components/body/accueil/Client";
 import CatSection from "../components/body/CatSection";
 import HeroSection from "../components/body/HeroSection";
 import NewsLetter from "../components/body/NewsLetter";
@@ -14,6 +15,7 @@ export default function HomePage() {
       <TopBooks />
       <Populaires />
       <NewsLetter />
+      <Client /> 
     </>
   );
 }
