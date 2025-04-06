@@ -14,7 +14,7 @@ const stories = [
   {
     id: "1",
     imageUrl:
-      "https://images.unsplash.com/photo-1527004013197-933c4bb611b3?w=500&h=800&fit=crop",
+      "https://img.freepik.com/photos-gratuite/arrangement-livres-anglais-nature-morte-high-angle_23-2149440476.jpg?t=st=1743944189~exp=1743947789~hmac=290c439660077d50f4e78a919d5b023fee00eb86f3f90d5cd963968e9672f215&w=740",
     userImageUrl:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
     username: "Sarah Wilson",
@@ -22,7 +22,7 @@ const stories = [
   {
     id: "2",
     imageUrl:
-      "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?w=500&h=800&fit=crop",
+      "https://img.freepik.com/photos-gratuite/illustration-3d-livre-violet-isole-fond_107791-16378.jpg?t=st=1743944985~exp=1743948585~hmac=6c441479d7a38057f9be06457a173061f6327f1c2f37382b8f0ae570bee22d2c&w=1380",
     userImageUrl:
       "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=100&h=100&fit=crop",
     username: "Mike Johnson",
