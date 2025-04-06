@@ -1,4 +1,4 @@
-import ClientLogos from "../about/cardScroller/ClientLogos";
+import ClientLogos from "../../body/about/cardScroll/ScrollSnap";
 
 export default function Client() {
   return (

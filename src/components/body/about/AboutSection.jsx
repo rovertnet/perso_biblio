@@ -1,5 +1,4 @@
 import aboutimg from "../../../assets/image/hero1.jpg"
-import logo1 from "../../../assets/image/logo10.jpg"
 import ClientLogos from "./cardScroll/ScrollSnap"
 
 export default function AboutSection() {

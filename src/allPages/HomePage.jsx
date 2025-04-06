@@ -14,8 +14,8 @@ export default function HomePage() {
       <CatSection />
       <TopBooks />
       <Populaires />
+      <Client />
       <NewsLetter />
-      <Client /> 
     </>
   );
 }
