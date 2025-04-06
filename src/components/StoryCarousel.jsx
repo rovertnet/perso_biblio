@@ -111,12 +111,12 @@ export function StoriesCarousel() {
   };
 
   return (
-    <div className="relative w-full max-w-96 mx-auto px-8 md:px-14 py-6">
+    <div className="relative w-full max-w-full mx-auto px-8 md:px-14 py-6">
       <div className="relative">
         <div
           ref={carouselRef}
           onScroll={handleScroll}
-          className="flex gap-4 overflow-x-auto scroll-smooth pb-4 "
+          className="flex gap-4 overflow-x-auto scroll-smooth pb-4 scrollbar-hide"
         >
           {/* Create Story Card */}
           <motion.div
