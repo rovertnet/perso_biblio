@@ -46,7 +46,7 @@ const stories = [
   {
     id: "5",
     imageUrl:
-      "https://images.unsplash.com/photo-1682686580950-960d1d513532?w=500&h=800&fit=crop",
+      "https://img.freepik.com/photos-gratuite/livre-decoratif-fond-bleu_23-2147615011.jpg?t=st=1743945432~exp=1743949032~hmac=4551cc07390baf2ede4450acf7fb49f61490fcc53cf2d5c5aa1a0f21cfe28c5a&w=740",
     userImageUrl:
       "https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?w=100&h=100&fit=crop",
     username: "Lisa Anderson",
@@ -54,7 +54,7 @@ const stories = [
   {
     id: "5",
     imageUrl:
-      "https://images.unsplash.com/photo-1682686580950-960d1d513532?w=500&h=800&fit=crop",
+      "https://img.freepik.com/photos-gratuite/disposition-du-dictionnaire-anglais-marqueurs_23-2149440467.jpg?t=st=1743945490~exp=1743949090~hmac=d7683de1723fdfaa7d36d44b3873a153ccdd843889c2466d97663023282e5ffc&w=740",
     userImageUrl:
       "https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?w=100&h=100&fit=crop",
     username: "Lisa Anderson",
