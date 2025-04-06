@@ -62,7 +62,7 @@ const stories = [
   {
     id: "5",
     imageUrl:
-      "https://images.unsplash.com/photo-1682686580950-960d1d513532?w=500&h=800&fit=crop",
+      "https://img.freepik.com/photos-gratuite/livre-3d-rendu-manuel-papier-ferme-versets_107791-16792.jpg?t=st=1743945563~exp=1743949163~hmac=0e6b1ea9cf0d4f398c26df94c95bc6f1af1ebe71456e4c7c4a677063ae723bd3&w=1380",
     userImageUrl:
       "https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?w=100&h=100&fit=crop",
     username: "Lisa Anderson",
@@ -70,7 +70,7 @@ const stories = [
   {
     id: "5",
     imageUrl:
-      "https://images.unsplash.com/photo-1682686580950-960d1d513532?w=500&h=800&fit=crop",
+      "https://img.freepik.com/photos-gratuite/livres-anglais-reposant-table-espace-travail_23-2149429582.jpg?t=st=1743946088~exp=1743949688~hmac=3991de9a5b4418e2029b0d823db107640aa3876738384a86c026ffaaef50a324&w=1380",
     userImageUrl:
       "https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?w=100&h=100&fit=crop",
     username: "Lisa Anderson",
@@ -78,7 +78,7 @@ const stories = [
   {
     id: "5",
     imageUrl:
-      "https://images.unsplash.com/photo-1682686580950-960d1d513532?w=500&h=800&fit=crop",
+      "https://img.freepik.com/photos-gratuite/illustration-3d-livres-fermes-ouverts-crayon_107791-15848.jpg?t=st=1743945773~exp=1743949373~hmac=89ffcaed66804a7d6b682630a8e8ad6708abf9a3dbb0a2190cfe2c6c1ff6eb7a&w=1380",
     userImageUrl:
       "https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?w=100&h=100&fit=crop",
     username: "Lisa Anderson",
@@ -86,7 +86,7 @@ const stories = [
   {
     id: "5",
     imageUrl:
-      "https://images.unsplash.com/photo-1682686580950-960d1d513532?w=500&h=800&fit=crop",
+      "https://img.freepik.com/photos-gratuite/organise-dans-livres-verticaux_1101-119.jpg?t=st=1743946375~exp=1743949975~hmac=224cd5344dc36c42afbe46de77f203a3048983d76cfef09d9f05678603be17a8&w=900",
     userImageUrl:
       "https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?w=100&h=100&fit=crop",
     username: "Lisa Anderson",
