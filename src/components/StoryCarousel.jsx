@@ -30,7 +30,7 @@ const stories = [
   {
     id: "3",
     imageUrl:
-      "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=500&h=800&fit=crop",
+      "https://img.freepik.com/photos-gratuite/livres-anglais-fond-bleu_23-2149440456.jpg?t=st=1743945131~exp=1743948731~hmac=e9779a51929850aef9ded95b209460cae7f81fb1c98da82a78ed555a8af52990&w=740",
     userImageUrl:
       "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop",
     username: "Emma Davis",
@@ -38,7 +38,7 @@ const stories = [
   {
     id: "4",
     imageUrl:
-      "https://images.unsplash.com/photo-1682686580024-580519d4b2d2?w=500&h=800&fit=crop",
+      "https://img.freepik.com/photos-gratuite/couverture-du-livre-devant-position-verticale_1101-1118.jpg?t=st=1743945220~exp=1743948820~hmac=e2dffdfacfe1b99d4485c567901f4f0bf808731e4e63d7d2d3fc4d7b60558eb2&w=740",
     userImageUrl:
       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
     username: "John Smith",
