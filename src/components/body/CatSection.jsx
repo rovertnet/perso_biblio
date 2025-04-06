@@ -111,6 +111,102 @@ const stories = [
     hasStory: true,
     viewed: true,
   },
+  {
+    id: 7,
+    username: "john_doe",
+    avatar:
+      "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?w=150",
+    hasStory: true,
+    viewed: false,
+  },
+  {
+    id: 8,
+    username: "lisa_marie",
+    avatar:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150",
+    hasStory: true,
+    viewed: true,
+  },
+  {
+    id: 9,
+    username: "mark_twain",
+    avatar:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150",
+    hasStory: true,
+    viewed: false,
+  },
+  {
+    id: 10,
+    username: "jane_doe",
+    avatar:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150",
+    hasStory: true,
+    viewed: true,
+  },
+  {
+    id: 11,
+    username: "peter_parker",
+    avatar:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150",
+    hasStory: true,
+    viewed: false,
+  },
+  {
+    id: 12,
+    username: "clark_kent",
+    avatar:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150",
+    hasStory: true,
+    viewed: true,
+  },
+  {
+    id: 13,
+    username: "bruce_wayne",
+    avatar:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150",
+    hasStory: true,
+    viewed: false,
+  },
+  {
+    id: 14,
+    username: "harry_potter",
+    avatar:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150",
+    hasStory: true,
+    viewed: true,
+  },
+  {
+    id: 15,
+    username: "hermione_granger",
+    avatar:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150",
+    hasStory: true,
+    viewed: false,
+  },
+  {
+    id: 16,
+    username: "ron_weasley",
+    avatar:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150",
+    hasStory: true,
+    viewed: true,
+  },
+  {
+    id: 17,
+    username: "luna_lovegood",
+    avatar:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150",
+    hasStory: true,
+    viewed: false,
+  },
+  {
+    id: 18,
+    username: "neville_longbottom",
+    avatar:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150",
+    hasStory: true,
+    viewed: true,
+  },
 ];
 
 const StoryCircle = ({ story, onClick }) => {
@@ -252,25 +348,23 @@ const StoriesContainer = () => {
 };
 
 const App = () => (
-  <div className="min-h-screen bg-gray-50">
+  <div className=" bg-gray-50">
+    {/* <h1 className="font-extrabold text-center md:text-5xl text-3xl  py-14 text-transparent bg-clip-text bg-gradient-to-r from-purple-700 from-10% via-blue-400 via-30% to-orange-500 to-90% ... uppercase">
+      Catégoeies
+    </h1> */}
     <motion.div
-      className="max-w-2xl mx-auto bg-white shadow-sm"
+      className=" bg-white shadow-sm"
       initial={{ y: 20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ type: "spring", stiffness: 200, damping: 20 }}
     >
-      <div className="border-b">
+      <div className="block py-6 bg-white">
+        <h2 className="font-bold text-lg text-slate-900 py-5  px-8 md:px-14">
+          Toutes les catégories
+        </h2>
+        <hr className="text-slate-300 " />
         <StoriesContainer />
       </div>
-
-      <motion.div
-        className="p-4 text-center text-gray-500"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.3 }}
-      >
-        Le contenu du feed apparaîtrait ici
-      </motion.div>
     </motion.div>
   </div>
 );
