@@ -8,7 +8,7 @@ const stories = [
     id: "create",
     type: "create",
     userImageUrl:
-      "https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=100&h=100&fit=crop",
+      "https://img.freepik.com/photos-gratuite/arrangement-livres-anglais-nature-morte-high-angle_23-2149440476.jpg?t=st=1743944189~exp=1743947789~hmac=290c439660077d50f4e78a919d5b023fee00eb86f3f90d5cd963968e9672f215&w=740",
     username: "Create Story",
   },
   {
