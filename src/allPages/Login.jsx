@@ -1,7 +1,7 @@
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
-import { loginConfig as login } from '../services/authService';
+import { loginApi } from '../services/authService';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -33,7 +33,7 @@ export default function Login() {
     setLoading(true);
     setServerError('');
     try {
-      const res = await login(data.email, data.password);
+      const res = await loginApi(data.email, data.password);
       const storage = data.remember ? localStorage : sessionStorage;
       storage.setItem('token', res.access_token);
       navigate('/shop');
