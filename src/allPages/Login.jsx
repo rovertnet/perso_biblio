@@ -156,6 +156,13 @@ export default function Login() {
           type={showPassword ? 'text' : 'password'}
           placeholder="Mot de passe"
           {...register('password')}
+          autoComplete="current-password"
+          autoFocus
+          required
+          minLength={6}
+          maxLength={20}
+          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,20}$"
+          title="Le mot de passe doit contenir au moins une lettre majuscule, une lettre minuscule et un chiffre."
           className="w-full border rounded p-2 pr-10"
         />
         <span
@@ -177,7 +184,7 @@ export default function Login() {
 
       <button
         type="submit"
-        className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 disabled:opacity-50"
+        className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 disabled:opacity-50 cursor-pointer"
         disabled={loading}
       >
         {loading ? 'Connexion...' : 'Se connecter'}
