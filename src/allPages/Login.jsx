@@ -1,11 +1,9 @@
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
-import { loginConfig } from '../services/authService';
+import { loginConfig as login } from '../services/authService';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useEffect } from 'react';
-import { useContext } from 'react';
 
 const schema = yup.object().shape({
   email: yup.string().email('Email invalide').required('Email requis'),
@@ -17,6 +15,7 @@ export default function Login() {
   const [serverError, setServerError] = useState('');
   const [loading, setLoading] = useState(false);
 
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
