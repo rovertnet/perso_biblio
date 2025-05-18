@@ -94,6 +94,7 @@ import { loginApi } from '../services/authService';
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaEye, FaEyeSlash, FaGoogle, FaApple, FaFacebook } from 'react-icons/fa';
+import { useAuth } from '../context/AuthContext';
 
 const schema = yup.object().shape({
   email: yup.string().email('Email invalide').required('Email requis'),
@@ -107,6 +108,8 @@ export default function Login() {
   const [showPassword, setShowPassword] = useState(false);
 
   const navigate = useNavigate();
+  const { login } = useAuth();
+
   const {
     register,
     handleSubmit,
@@ -124,9 +127,12 @@ export default function Login() {
     setLoading(true);
     setServerError('');
     try {
+      // const res = await loginApi(data.email, data.password);
+      // const storage = data.remember ? localStorage : sessionStorage;
+      // storage.setItem('token', res.access_token);
+      // navigate('/shop');
       const res = await loginApi(data.email, data.password);
-      const storage = data.remember ? localStorage : sessionStorage;
-      storage.setItem('token', res.access_token);
+      login(res, data.remember); // stocke le token + user
       navigate('/shop');
     } catch (err) {
       setServerError(err.message || 'Échec de la connexion.');

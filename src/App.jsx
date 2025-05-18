@@ -9,6 +9,7 @@ import Books from "./allPages/Topbooks";
 import ShopBooks from "./allPages/Shop";
 import Login from "./allPages/Login";
 import Register from "./allPages/Register";
+import AdminDashboard from "./admin/AdminDashboard"
 
 const MyContext = createContext();
 
@@ -32,6 +33,14 @@ function App() {
             <Route path="/contact" exact={true} element={<Contact />} />
             <Route path="/login" exact={true} element={<Login />} />
             <Route path="/register" exact={true} element={<Register />} />
+            <Route
+              path="/admin"
+              element={
+                <ProtectedRoute requiredRole="admin">
+                  <AdminDashboard />
+                </ProtectedRoute>
+              }
+            />
           </Routes>
         </MyContext.Provider>
         <Footer />
