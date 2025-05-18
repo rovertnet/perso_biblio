@@ -190,6 +190,11 @@ export default function Login() {
         {loading ? 'Connexion...' : 'Se connecter'}
       </button>
 
+      <p className="text-center text-sm text-gray-600">
+        Vous avez déjà un compte ?{' '}
+        <Link to="/register" className="text-blue-600 hover:underline">Connectez-vous</Link>
+      </p>
+
       <div className="text-center text-sm text-gray-500">Ou continue avec</div>
 
       <div className="flex justify-center gap-4">

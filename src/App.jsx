@@ -8,6 +8,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Books from "./allPages/Topbooks";
 import ShopBooks from "./allPages/Shop";
 import Login from "./allPages/Login";
+import Register from "./allPages/Register";
 
 const MyContext = createContext();
 
@@ -30,6 +31,7 @@ function App() {
             <Route path="/about" exact={true} element={<About />} />
             <Route path="/contact" exact={true} element={<Contact />} />
             <Route path="/login" exact={true} element={<Login />} />
+            <Route path="/register" exact={true} element={<Register />} />
           </Routes>
         </MyContext.Provider>
         <Footer />
