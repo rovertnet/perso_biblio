@@ -3,6 +3,9 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import { login } from '../services/authService';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useContext } from 'react';
 
 const schema = yup.object().shape({
   email: yup.string().email('Email invalide').required('Email requis'),
