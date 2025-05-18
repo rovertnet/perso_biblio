@@ -34,7 +34,7 @@ export default function Login() {
       const res = await login(data.email, data.password);
       const storage = data.remember ? localStorage : sessionStorage;
       storage.setItem('token', res.access_token);
-      navigate('/dashboard');
+      navigate('/');
     } catch (err) {
       setServerError(err.message || 'Échec de la connexion.');
     } finally {
