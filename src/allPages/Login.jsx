@@ -92,7 +92,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import { loginApi } from '../services/authService';
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FaEye, FaEyeSlash, FaGoogle, FaApple, FaFacebook } from 'react-icons/fa';
 
 const schema = yup.object().shape({
@@ -156,13 +156,6 @@ export default function Login() {
           type={showPassword ? 'text' : 'password'}
           placeholder="Mot de passe"
           {...register('password')}
-          autoComplete="current-password"
-          autoFocus
-          required
-          minLength={6}
-          maxLength={20}
-          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,20}$"
-          title="Le mot de passe doit contenir au moins une lettre majuscule, une lettre minuscule et un chiffre."
           className="w-full border rounded p-2 pr-10"
         />
         <span
