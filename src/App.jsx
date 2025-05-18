@@ -10,6 +10,8 @@ import ShopBooks from "./allPages/Shop";
 import Login from "./allPages/Login";
 import Register from "./allPages/Register";
 import AdminDashboard from "./admin/AdminDashboard"
+import ProtectedRoute from "./components/ProtectedRoute";
+import SubscriberDashboard from "./allPages/SubscriberDashboard";
 
 const MyContext = createContext();
 
@@ -38,6 +40,14 @@ function App() {
               element={
                 <ProtectedRoute requiredRole="admin">
                   <AdminDashboard />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/dashboard"
+              element={
+                <ProtectedRoute requiredRole="subscriber">
+                  <SubscriberDashboard />
                 </ProtectedRoute>
               }
             />

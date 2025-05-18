@@ -133,7 +133,10 @@ export default function Login() {
       // navigate('/shop');
       const res = await loginApi(data.email, data.password);
       login(res, data.remember); // stocke le token + user
-      navigate('/shop');
+      const role = res.user.role;
+      if (role === 'admin') navigate('/admin');
+      else if (role === 'moderator') navigate('/moderator');
+      else navigate('/dashboard'); // abonné
     } catch (err) {
       setServerError(err.message || 'Échec de la connexion.');
     } finally {
