@@ -191,8 +191,8 @@ export default function Login() {
       </button>
 
       <p className="text-center text-sm text-gray-600">
-        Vous avez déjà un compte ?{' '}
-        <Link to="/register" className="text-blue-600 hover:underline">Connectez-vous</Link>
+        Vous n'avez pas de compte ?{' '}
+        <Link to="/register" className="text-blue-600 hover:underline">Inscrivez-vous</Link>
       </p>
 
       <div className="text-center text-sm text-gray-500">Ou continue avec</div>
