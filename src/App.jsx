@@ -7,6 +7,7 @@ import Contact from "./allPages/Contact";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Books from "./allPages/Topbooks";
 import ShopBooks from "./allPages/Shop";
+import Login from "./allPages/Login";
 
 const MyContext = createContext();
 
@@ -28,6 +29,7 @@ function App() {
             <Route path="/topbooks" exact={true} element={<Books />} />
             <Route path="/about" exact={true} element={<About />} />
             <Route path="/contact" exact={true} element={<Contact />} />
+            <Route path="/login" exact={true} element={<Login />} />
           </Routes>
         </MyContext.Provider>
         <Footer />
