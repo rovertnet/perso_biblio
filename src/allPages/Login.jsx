@@ -12,6 +12,7 @@ const schema = yup.object().shape({
 
 export default function Login() {
   const [serverError, setServerError] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const {
     register,
@@ -27,17 +28,17 @@ export default function Login() {
   });
 
   const onSubmit = async (data) => {
+    setLoading(true);
     setServerError('');
     try {
       const res = await login(data.email, data.password);
-      if (data.remember) {
-        localStorage.setItem('token', res.access_token);
-      } else {
-        sessionStorage.setItem('token', res.access_token);
-      }
-      // redirection après login
+      const storage = data.remember ? localStorage : sessionStorage;
+      storage.setItem('token', res.access_token);
+      navigate('/dashboard');
     } catch (err) {
       setServerError(err.message || 'Échec de la connexion.');
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -72,9 +73,14 @@ export default function Login() {
         <label htmlFor="remember" className="text-sm">Se souvenir de moi</label>
       </div>
 
-      <button type="submit" className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">
-        Se connecter
+      <button
+        type="submit"
+        className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 disabled:opacity-50"
+        disabled={loading}
+      >
+        {loading ? 'Connexion...' : 'Se connecter'}
       </button>
+
     </form>
   );
 }
