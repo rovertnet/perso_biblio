@@ -167,9 +167,11 @@ export default function NavBar() {
                 transition={{ delay: navigation.length * 0.1 }}
                 className="flex space-x-5 py-5 justify-center px-11 items-center"
               >
-                <button className="font-bold cursor-pointer text-2xl md:text-lg py-2 md:py-2 px-14 md:px-3 text-slate-100 rounded-xl bg-[#0c296d] hover:bg-blue-00">
-                  Sign up
-                </button>
+                <Link to={'/login'}>
+                  <button className="font-bold cursor-pointer text-2xl md:text-lg py-2 md:py-2 px-14 md:px-3 text-slate-100 rounded-xl bg-[#0c296d] hover:bg-blue-00">
+                    Sign up
+                  </button>
+                </Link>
                 <button className="font-bold cursor-pointer text-lg md:text-lg py-3 md:py-3 px-3 md:px-3 text-slate-100 rounded-full bg-[#d2defb]">
                   <FaCartArrowDown className="text-3xl font-bold text-[#0c296d]" />
                 </button>
