@@ -58,7 +58,7 @@ export default function SubscriberDashboard() {
                   </button>
                   <a
                     href={book.downloadUrl}
-                    className="bg-green-600 text-white px-3 py-1 rounded hover:bg-green-700"
+                    className="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700"
                     download
                   >
                     Télécharger

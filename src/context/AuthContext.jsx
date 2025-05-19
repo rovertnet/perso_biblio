@@ -14,7 +14,7 @@ export const AuthProvider = ({ children }) => {
     }
   }, []);
 
-  const login  = (data, remember) => {
+  const login = (data, remember) => {
     const storage = remember ? localStorage : sessionStorage;
     storage.setItem('token', data.access_token);
     storage.setItem('user', JSON.stringify(data.user));
