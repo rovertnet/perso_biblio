@@ -37,6 +37,7 @@ function App() {
             <Route path="/register" exact={true} element={<Register />} />
             <Route
               path="/admin"
+              exact={true}
               element={
                 <ProtectedRoute requiredRole="admin">
                   <AdminDashboard />
@@ -45,6 +46,7 @@ function App() {
             />
             <Route
               path="/dashboard"
+              exact={true}
               element={
                 <ProtectedRoute requiredRole="subscriber">
                   <SubscriberDashboard />
