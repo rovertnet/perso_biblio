@@ -12,6 +12,7 @@ import Register from "./allPages/Register";
 import AdminDashboard from "./admin/AdminDashboard"
 import ProtectedRoute from "./components/ProtectedRoute";
 import SubscriberDashboard from "./allPages/SubscriberDashboard";
+import Unauthorized from './allPages/Unauthorized'; 
 
 const MyContext = createContext();
 
@@ -53,6 +54,7 @@ function App() {
                 </ProtectedRoute>
               }
             />
+            <Route path="/unauthorized"  exact={true} element={<Unauthorized />} />
           </Routes>
         </MyContext.Provider>
         <Footer />

@@ -1,5 +1,6 @@
 // context/AuthContext.jsx
 import { createContext, useContext, useEffect, useState } from 'react';
+import { data } from 'react-router-dom';
 
 const AuthContext = createContext();
 
@@ -10,7 +11,13 @@ export const AuthProvider = ({ children }) => {
     const token = localStorage.getItem('token') || sessionStorage.getItem('token');
     const userData = localStorage.getItem('user');
     if (token && userData) {
-      setUser(JSON.parse(userData));
+     try{
+       setUser(JSON.parse(userData));
+     }catch(error){
+      console.error('erreur de parsing JSON userData', error)
+      localStorage.removeItem('user')
+      sessionStorage.removeItem('user', JSON.stringify(data.user))
+     } 
     }
   }, []);
 
