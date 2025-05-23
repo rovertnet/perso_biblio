@@ -7,19 +7,22 @@ const AuthContext = createContext();
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
 
-  useEffect(() => {
-    const token = localStorage.getItem('token') || sessionStorage.getItem('token');
-    const userData = localStorage.getItem('user');
-    if (token && userData) {
-     try{
-       setUser(JSON.parse(userData));
-     }catch(error){
-      console.error('erreur de parsing JSON userData', error)
-      localStorage.removeItem('user')
-      sessionStorage.removeItem('user', JSON.stringify(data.user))
-     } 
-    }
+ useEffect(() => {
+   const token = localStorage.getItem('token') || sessionStorage.getItem('token');
+   const userRaw = localStorage.getItem('user') || sessionStorage.getItem('user');
+
+   if (token && userRaw) {
+      try {
+         const userData = JSON.parse(userRaw);
+         setUser(userData);
+      } catch (e) {
+         console.error("Erreur de parsing JSON userData :", e);
+         localStorage.removeItem('user');
+         sessionStorage.removeItem('user');
+      }
+   }
   }, []);
+
 
   const login = (data, remember) => {
     const storage = remember ? localStorage : sessionStorage;
