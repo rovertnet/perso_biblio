@@ -5,6 +5,7 @@ const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
 
  useEffect(() => {
    const token = localStorage.getItem('token') || sessionStorage.getItem('token');
@@ -21,6 +22,7 @@ export const AuthProvider = ({ children }) => {
          sessionStorage.removeItem('user');
       }
    }
+   setLoading(false);
   }, []);
 
 
@@ -31,7 +33,6 @@ export const AuthProvider = ({ children }) => {
          storage.setItem('user', JSON.stringify(data.user));
 
          setUser(data.user);
-
       }
   };
 

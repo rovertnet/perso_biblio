@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { Home, BookOpen, LogOut, X } from 'lucide-react';
+import { useAuth } from '../context/AuthContext';
 
 export default function Sidebar({ isOpen, onClose }) {
   const location = useLocation();
@@ -10,7 +11,7 @@ export default function Sidebar({ isOpen, onClose }) {
     { to: '/mes-livres', label: 'Mes livres' },
   ];
 
-  if (user?.role === 'admin') {
+  if (user?.role === 'Admin') {
     links.push({ to: '/admin', label: 'Admin' });
   }
 

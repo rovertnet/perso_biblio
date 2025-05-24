@@ -18,9 +18,12 @@ import AbonneSpace from "./allPages/abonne/AbonneSpace";
 const MyContext = createContext();
 
 function AppContent() {
-  const { user } = useAuth();
   const location = useLocation();
+  const { user, loading } = useAuth(); // ✅ inclure loading
 
+  if (loading) {
+    return <div className="flex justify-center items-center h-screen text-xl">Chargement...</div>;
+  }
   // Liste des routes où on masque NavBar et Footer
   const noLayoutRoutes = ["/login", "/register", "/admin", "/dashboard"];
 
@@ -45,7 +48,7 @@ function AppContent() {
         <Route
           path="/admin"
           element={
-            <ProtectedRoute requiredRole="admin">
+            <ProtectedRoute requiredRole="Admin">
               <AdminDashboard />
             </ProtectedRoute>
           }
@@ -53,7 +56,7 @@ function AppContent() {
         <Route
           path="/dashboard"
           element={
-            <ProtectedRoute requiredRole="subscriber">
+            <ProtectedRoute requiredRole="Abonne">
               <AbonneSpace />
             </ProtectedRoute>
           }

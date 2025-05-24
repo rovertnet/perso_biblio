@@ -45,9 +45,12 @@ export default function Login() {
       const res = await loginApi(data.email, data.password);
       login(res, data.remember); // stocke le token + user
       const role = res.user.role;
-      if (role === 'admin') navigate('/admin');
-      else if (role === 'subscriber') navigate('/dashboard');
-      else navigate('/user'); // abonné
+      if (role === 'Admin') navigate('/admin');
+      else if (role === 'Abonne') {
+        navigate('/dashboard');
+      }else{
+        navigate('/'); // redirige vers la page d'accueil si le rôle n'est pas reconnu
+      } // abonné
     } catch (err) {
       setServerError(err.message || 'Échec de la connexion.');
     } finally {
