@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { getUserBooks } from '../services/bookService'; // à créer
 import { useAuth } from '../context/AuthContext';
 
-export default function SubscriberDashboard() {
+export default function UserSpace() {
   const { user } = useAuth();
   const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(true);
