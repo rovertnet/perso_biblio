@@ -14,11 +14,13 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import SubscriberDashboard from "./allPages/SubscriberDashboard";
 import Unauthorized from './allPages/Unauthorized'; 
 import UserSpace from "./allPages/UserSpace";
+import { useAuth } from "./context/AuthContext";
 
 const MyContext = createContext();
 
 
 function App() {
+  const { user } = useAuth();
   
   const values = {
    
@@ -27,6 +29,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
+       (!user ? (
         <NavBar />
         <MyContext.Provider value={values}>
           <Routes>
@@ -60,6 +63,21 @@ function App() {
           </Routes>
         </MyContext.Provider>
         <Footer />
+       ) : (
+          <MyContext.Provider value={values}>
+            <Routes>
+              <Route
+                path="/dashboard"
+                exact={true}
+                element={
+                  <ProtectedRoute requiredRole="subscriber">
+                    <SubscriberDashboard />
+                  </ProtectedRoute>
+                }
+              />
+            </Routes>
+          </MyContext.Provider>
+       ) )
       </BrowserRouter>
     </>
   );
