@@ -15,6 +15,7 @@ import SubscriberDashboard from "./allPages/SubscriberDashboard";
 import Unauthorized from './allPages/Unauthorized'; 
 import UserSpace from "./allPages/UserSpace";
 import { useAuth } from "./context/AuthContext";
+import AbonneSpace from "./allPages/abonne/AbonneSpace";
 
 const MyContext = createContext();
 
@@ -62,7 +63,7 @@ function App() {
                   exact={true}
                   element={
                     <ProtectedRoute requiredRole="subscriber">
-                      <SubscriberDashboard />
+                      <AbonneSpace />
                     </ProtectedRoute>
                   }
                 />

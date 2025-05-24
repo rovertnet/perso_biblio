@@ -81,7 +81,7 @@ export default function NavBar() {
                 <div className="relative group">
                   <button  
                     aria-label="user"
-                      className="font-bold border-[1px] border-[#0c296d] cursor-pointer text-lg md:text-lg py-3 md:py-3 px-3 md:px-3 text-slate-100 rounded-full bg-[#d2defb]">
+                      className="font-bold cursor-pointer text-lg md:text-lg py-3 md:py-3 px-3 md:px-3 text-slate-100 rounded-full bg-[#d2defb]">
                      <FaUserCircle className="text-3xl text-[#0c296d] cursor-pointer" />
                   </button>
                   <div className="absolute right-0 hidden group-hover:block mt-2 bg-white rounded shadow-md p-3 z-10 w-48">
