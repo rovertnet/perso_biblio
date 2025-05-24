@@ -33,14 +33,30 @@ const navVariants = {
 export default function NavBar() {
   const [openMenu, setOpenMenu] = useState(false);
 
+  const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef(null);
+
+  const toggleMenus = () => {
+    setIsOpen((prev) => !prev);
+  };
+
+  // Fermer le menu si on clique à l'extérieur
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+
   const toggleMenu = () => {
     setOpenMenu(!openMenu);
   };
 
   const { user, logout } = useAuth();
-  const handleLogout = () => {
-    logout();
-  };
 
   return (
     <>
@@ -78,21 +94,36 @@ export default function NavBar() {
                   </button>
                 </Link>
               ) : (
-                <div className="relative group">
-                  <button  
+                <div className="relative" ref={menuRef}>
+                <button
+                    onClick={toggleMenus}
                     aria-label="user"
-                      className="font-bold cursor-pointer text-lg md:text-lg py-3 md:py-3 px-3 md:px-3 text-slate-100 rounded-full bg-[#d2defb]">
-                     <FaUserCircle className="text-3xl text-[#0c296d] cursor-pointer" />
+                    className="font-bold cursor-pointer text-lg py-3 px-3 text-slate-100 rounded-full bg-[#d2defb]"
+                  >
+                    <FaUserCircle className="text-3xl text-[#0c296d]" />
                   </button>
-                  <div className="absolute right-0 hidden group-hover:block mt-2 bg-white rounded shadow-md p-3 z-10 w-48">
-                    <p className="text-xs text-gray-500 mb-2 capitalize">{user.role}</p>
-                    <Link to={user.role === 'admin' ? '/admin' : '/dashboard'} className="text-blue-500 text-sm block">
-                      Mon espace
-                    </Link>
-                    <button onClick={logout} className="text-red-500 text-sm mt-2">
-                      Déconnexion
-                    </button>
-                  </div>
+
+                  {isOpen && (
+                    <div className="absolute right-0 mt-2 bg-white rounded shadow-md p-3 z-10 w-48">
+                      <p className="text-xs text-gray-500 mb-2 capitalize">{user.role}</p>
+                      <Link
+                        to={user.role === "admin" ? "/admin" : "/dashboard"}
+                        className="text-blue-500 text-sm block hover:underline"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        Mon espace
+                      </Link>
+                      <button
+                        onClick={() => {
+                          logout();
+                          setIsOpen(false);
+                        }}
+                        className="text-red-500 text-sm mt-2 hover:underline"
+                      >
+                        Déconnexion
+                      </button>
+                    </div>
+                  )}
                 </div>
               )}
             </div>

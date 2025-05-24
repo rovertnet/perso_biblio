@@ -46,8 +46,8 @@ export default function Login() {
       login(res, data.remember); // stocke le token + user
       const role = res.user.role;
       if (role === 'admin') navigate('/admin');
-      else if (role === 'moderator') navigate('/moderator');
-      else navigate('/dashboard'); // abonné
+      else if (role === 'subscriber') navigate('/dashboard');
+      else navigate('/user'); // abonné
     } catch (err) {
       setServerError(err.message || 'Échec de la connexion.');
     } finally {
