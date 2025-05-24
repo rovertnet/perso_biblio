@@ -40,24 +40,6 @@ function App() {
             <Route path="/contact" exact={true} element={<Contact />} />
             <Route path="/login" exact={true} element={<Login />} />
             <Route path="/register" exact={true} element={<Register />} />
-            <Route
-              path="/admin"
-              exact={true}
-              element={
-                <ProtectedRoute requiredRole="admin">
-                  <AdminDashboard />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/dashboard"
-              exact={true}
-              element={
-                <ProtectedRoute requiredRole="subscriber">
-                  <SubscriberDashboard />
-                </ProtectedRoute>
-              }
-            />
             <Route path="/unauthorized"  exact={true} element={<Unauthorized />} />
             <Route path="/user"  exact={true} element={<UserSpace />} />
           </Routes>
@@ -66,15 +48,24 @@ function App() {
        ) : (
           <MyContext.Provider value={values}>
             <Routes>
-              <Route
-                path="/dashboard"
-                exact={true}
-                element={
-                  <ProtectedRoute requiredRole="subscriber">
-                    <SubscriberDashboard />
-                  </ProtectedRoute>
-                }
-              />
+               <Route
+                  path="/admin"
+                  exact={true}
+                  element={
+                    <ProtectedRoute requiredRole="admin">
+                      <AdminDashboard />
+                    </ProtectedRoute>
+                  }
+                />
+                <Route
+                  path="/dashboard"
+                  exact={true}
+                  element={
+                    <ProtectedRoute requiredRole="subscriber">
+                      <SubscriberDashboard />
+                    </ProtectedRoute>
+                  }
+                />
             </Routes>
           </MyContext.Provider>
        ) )
