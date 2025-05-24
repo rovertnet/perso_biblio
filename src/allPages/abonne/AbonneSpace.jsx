@@ -1,7 +1,7 @@
-import Layout from '../components/Layout';
+import Layout from '../../components/Layout';
 import { useEffect, useState } from 'react';
-import { getUserBooks } from '../services/bookService';
-import { useAuth } from '../context/AuthContext';
+import { getUserBooks } from '../../services/bookService';
+import { useAuth } from '../../context/AuthContext';
 
 export default function AbonneSpace() {
   const { user } = useAuth();
