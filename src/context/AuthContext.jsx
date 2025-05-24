@@ -14,6 +14,8 @@ export const AuthProvider = ({ children }) => {
    if (token && userRaw) {
       try {
          const userData = JSON.parse(userRaw);
+         console.log('Utilisateur récupéré depuis le storage :', userData);
+         // Vérification de la validité du token
          setUser(userData);
       } catch (e) {
          console.error("Erreur de parsing JSON userData :", e);
@@ -25,11 +27,17 @@ export const AuthProvider = ({ children }) => {
 
 
   const login = (data, remember) => {
-    const storage = remember ? localStorage : sessionStorage;
-    storage.setItem('token', data.access_token);
-    storage.setItem('user', JSON.stringify(data.user));
-    setUser(data.user);
+      const storage = remember ? localStorage : sessionStorage;
+      if (data?.access_token && data?.user) {
+         storage.setItem('token', data.access_token);
+         storage.setItem('user', JSON.stringify(data.user));
+         console.log('Utilisateur connecté :', data.user);
+
+         setUser(data.user);
+
+      }
   };
+
 
   const logout = () => {
     localStorage.clear();
