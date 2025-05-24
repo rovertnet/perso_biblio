@@ -95,13 +95,6 @@ export default function NavBar() {
                   </div>
                 </div>
               )}
-
-              <button
-                aria-label="Cart"
-                className="font-bold border-[1px] border-[#0c296d] cursor-pointer text-lg md:text-lg py-3 md:py-3 px-3 md:px-3 text-slate-100 rounded-full bg-[#d2defb]"
-              >
-                <FaCartArrowDown className="text-xl font-bold text-[#0c296d]" />
-              </button>
             </div>
           </div>
 
