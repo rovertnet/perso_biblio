@@ -1,10 +1,11 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/image/logobiblio.png";
-import { FaCartArrowDown } from "react-icons/fa";
+import { FaCartArrowDown, FaUserCircle } from "react-icons/fa";
 import { HiMenuAlt4 } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useAuth } from "../../context/AuthContext";
 
 const navigation = [
   { name: "Accueil", to: "/" },
@@ -36,6 +37,11 @@ export default function NavBar() {
     setOpenMenu(!openMenu);
   };
 
+  const { user, logout } = useAuth();
+  const handleLogout = () => {
+    logout();
+  };
+
   return (
     <>
       <div className="bg-white fixed top-0 right-0 left-0 shadow-md z-30">
@@ -65,14 +71,27 @@ export default function NavBar() {
 
           <div className="hidden sm:hidden md:block lg:block">
             <div className="flex space-x-3">
-              <Link to={"/login"} >
-                <button
-                  aria-label="Sign up"
-                  className="font-bold cursor-pointer text-lg md:text-lg py-2 md:py-2 px-3 md:px-3 text-[#d2defb] rounded-xl bg-[#0c296d] hover:bg-blue-00"
-                >
-                  Sign up
-                </button>
-              </Link>
+              {!user ? (
+                <Link to="/login">
+                  <button className="font-bold cursor-pointer text-lg py-2 px-3 text-[#d2defb] rounded-xl bg-[#0c296d] hover:bg-blue-00">
+                    Sign up
+                  </button>
+                </Link>
+              ) : (
+                <div className="relative group">
+                  <FaUserCircle className="text-3xl text-[#0c296d] cursor-pointer" />
+                  <div className="absolute right-0 hidden group-hover:block mt-2 bg-white rounded shadow-md p-3 z-10 w-48">
+                    <p className="text-xs text-gray-500 mb-2 capitalize">{user.role}</p>
+                    <Link to={user.role === 'admin' ? '/admin' : '/dashboard'} className="text-blue-500 text-sm block">
+                      Mon espace
+                    </Link>
+                    <button onClick={logout} className="text-red-500 text-sm mt-2">
+                      Déconnexion
+                    </button>
+                  </div>
+                </div>
+              )}
+
               <button
                 aria-label="Cart"
                 className="font-bold border-[1px] border-[#0c296d] cursor-pointer text-lg md:text-lg py-3 md:py-3 px-3 md:px-3 text-slate-100 rounded-full bg-[#d2defb]"

@@ -1,3 +1,4 @@
+
 // pages/SubscriberDashboard.jsx
 import { useEffect, useState } from 'react';
 import { getUserBooks } from '../services/bookService'; // à créer
@@ -27,12 +28,11 @@ export default function SubscriberDashboard() {
 
   return (
     <div className="max-w-5xl mx-auto my-28 p-6 bg-white rounded shadow">
-      <h1 className="text-3xl font-bold mb-4">Bonjour, {user?.name || 'abonné'} 👋</h1>
+      <h1 className="text-3xl font-bold mb-4">Bonjour, {user?.name || 'Visiteur'} 👋</h1>
 
       {/* Statistiques */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
         <StatCard label="Livres disponibles" value={books.length} />
-        <StatCard label="Téléchargements" value={totalDownloads} />
         <StatCard label="Lectures" value={books.length * 3} /> {/* Exemple */}
         <StatCard label="Favoris" value={2} /> {/* À remplacer dynamiquement */}
       </div>
