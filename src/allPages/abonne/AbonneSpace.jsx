@@ -16,7 +16,7 @@ export default function AbonneSpace() {
   const totalDownloads = books.filter(b => b.downloaded).length;
   return (
     <Layout>
-      <div  className="max-w-5xl mx-auto my-28 p-6 bg-white rounded shadow">
+      <div  className="max-w-5xl mx-auto my-6 p-6 bg-white rounded shadow">
         <h1 className="text-3xl font-bold mb-4">Bonjour, {user?.name || 'abonné'} 👋</h1>
 
         {/* Statistiques */}

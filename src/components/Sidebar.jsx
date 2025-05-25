@@ -34,11 +34,11 @@ export default function Sidebar({ isOpen, onClose }) {
       )}
 
       <aside
-        className={`fixed top-0 left-0 z-40 bg-white h-full w-64 p-4 shadow transform transition-transform duration-300
+        className={`fixed top-0 left-0 bottom-0 z-40 bg-white max-h-full  h-full w-64 p-4 shadow transform transition-transform duration-300
         ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0 md:static`}
       >
         <div className="flex justify-between items-center mb-6">
-          <h2 className="text-xl font-bold">📚 BiblioApp</h2>
+          <h2 className="text-xl font-bold">📚 Espace Abonné</h2>
           <button onClick={onClose} className="md:hidden">
             <X />
           </button>
