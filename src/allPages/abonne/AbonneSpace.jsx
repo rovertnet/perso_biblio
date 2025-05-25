@@ -13,14 +13,16 @@ export default function AbonneSpace() {
       .catch(console.error);
   }, []);
 
+  const totalDownloads = books.filter(b => b.downloaded).length;
   return (
     <Layout>
       <h2 className="text-2xl font-bold mb-4">Bienvenue {user?.name || 'abonné'} 👋</h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-        <StatCard label="Livres" value={books.length} />
-        <StatCard label="Téléchargés" value={books.filter(b => b.downloaded).length} />
-        <StatCard label="Favoris" value={2} />
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+        <StatCard label="Livres disponibles" value={books.length} />
+        <StatCard label="Téléchargements" value={totalDownloads} />
+        <StatCard label="Lectures" value={books.length * 3} /> {/* Exemple */}
+        <StatCard label="Favoris" value={2} /> {/* À remplacer dynamiquement */}
       </div>
 
       <div>

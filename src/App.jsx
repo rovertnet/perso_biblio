@@ -18,12 +18,9 @@ import AbonneSpace from "./allPages/abonne/AbonneSpace";
 const MyContext = createContext();
 
 function AppContent() {
-  const location = useLocation();
-  const { user, loading } = useAuth(); // ✅ inclure loading
+  const location = useLocation(); // ✅ inclure loading
 
-  if (loading) {
-    return <div className="flex justify-center items-center h-screen text-xl">Chargement...</div>;
-  }
+  
   // Liste des routes où on masque NavBar et Footer
   const noLayoutRoutes = ["/login", "/register", "/admin", "/dashboard"];
 
@@ -69,7 +66,11 @@ function AppContent() {
 }
 
 function App() {
-  const values = {}; // Contexte global (à remplir si besoin)
+  const { user, loading } = useAuth(); // ✅ inclure loading
+  const values = {};
+  if (loading) return <div>Chargement...</div>; // Afficher un loader pendant le chargement
+  
+  // Contexte global (à remplir si besoin)
 
   return (
     <MyContext.Provider value={values}>
