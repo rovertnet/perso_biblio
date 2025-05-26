@@ -1,8 +1,7 @@
-
-
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Plus, ChevronLeft, ChevronRight } from "lucide-react";
+import { getAllCategories } from "../../services/categoryService";
 
 // const stories = [
 //   {
@@ -104,6 +103,12 @@ import { Plus, ChevronLeft, ChevronRight } from "lucide-react";
 // ];
 
 const StoryCircle = ({ story, onClick }) => {
+
+  const [stories, setStories] = useState([]);
+  const [scrollX, setScrollX] = useState(0);
+  const containerRef = useRef(null);
+
+
   const borderClass = story.hasStory
     ? story.viewed
       ? ""
@@ -151,9 +156,39 @@ const StoryCircle = ({ story, onClick }) => {
   );
 };
 
-const StoriesContainer = () => {
+const StoriesContainer = () => {;
+
+  const [stories, setStories] = useState([]);
   const [scrollX, setScrollX] = useState(0);
   const containerRef = useRef(null);
+
+  useEffect(() => {
+  const fetchStories = async () => {
+    try {
+      const response = await getAllCategories();
+      console.log("Réponse API :", response);
+
+      const categories = Array.isArray(response)
+        ? response
+        : response.data || [];
+
+      const formatted = categories.map(cat => ({
+        id: cat.id,
+        username: cat.name,
+        avatar: cat.image,
+        hasStory: true,
+        viewed: false,
+      }));
+
+      setStories(formatted);
+    } catch (error) {
+      console.error("Erreur lors du chargement des catégories :", error);
+    }
+  };
+
+  fetchStories();
+}, []);
+
 
   const scroll = (direction) => {
     const container = containerRef.current;
