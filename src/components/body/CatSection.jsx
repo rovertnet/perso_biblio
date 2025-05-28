@@ -130,7 +130,7 @@ const StoryCircle = ({ story, onClick }) => {
             <motion.img
               src={story.avatar}
               alt={story.username}
-              className="w-28 h-28 rounded-lg object-cover"
+              className="w-24 h-24 rounded-full object-cover"
               whileHover={{ scale: 1.1 }}
               transition={{ type: "spring", stiffness: 400, damping: 17 }}
             />
